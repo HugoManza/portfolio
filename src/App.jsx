@@ -11,7 +11,7 @@ const App = () => {
   return (
 
     
-    <BrowserRouter>
+    <BrowserRouter basename='/portfolio/'>
       <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home />} />
