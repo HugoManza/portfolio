@@ -1,0 +1,47 @@
+import React, { useState, useEffect } from 'react'
+import { Link } from 'react-router-dom'
+
+const Head = () => {
+  const [isVisible, setIsVisible] = useState(true)
+  const [lastScrollY, setLastScrollY] = useState(0)
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY
+      // VAraible aqui
+      if (currentScrollY > lastScrollY && currentScrollY > 550) {
+        setIsVisible(false)
+      } else {
+        setIsVisible(true)
+      }
+      setLastScrollY(currentScrollY)
+    }
+
+    window.addEventListener('scroll', handleScroll)
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [lastScrollY])
+
+  return (
+   
+    <header 
+      className="header" 
+      id="navbar"
+      style={{ 
+        position: 'fixed', 
+        top: 0,
+        transition: 'transform 0.3s ease-in-out',
+        transform: isVisible ? 'translateY(0)' : 'translateY(-100%)',
+        zIndex: 1000
+      }}
+    >
+        <Link className="logo" to="/">H.Manzano</Link>
+        <nav className="nav">
+          <a className='navButton' href="#projects"><h5>Projects</h5></a>
+          <a className='navButton' href="#about"><h5>About Me</h5></a>
+          <a className='navButton' href="#contact"><h5>Contact</h5></a>
+        </nav>
+      </header>
+  )
+}
+
+export default Head
