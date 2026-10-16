@@ -1,8 +1,7 @@
-// src/App.jsx
 import React from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Home from './pages/Home'
-import ProjectTemplate from './pages/ProjectTemplate' // Tu nueva plantilla
+import ProjectTemplate from './pages/ProjectTemplate'
 import ScrollToTop from './components/ScrollToTop'
 
 
