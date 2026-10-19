@@ -9,9 +9,11 @@
 //Color Variables
 $Main_Black: #101011;
 $Main_White: #fafafa;
-$Main_Gray: #727272;
-$ColorChange: #034708;
+$Main_Accent: #fcd706;
+$Main_Hover: #fcd706;
 $OpacityBlack: rgba(10, 10, 11, 0.8);
+$OpacityWhite: rgba(128, 128, 128, 0.25);
+$NoColor: rgba(253, 253, 253, 0);
 
 
 
@@ -37,6 +39,7 @@ h1 {
     text-decoration: none;
     font-weight: 900;
     text-transform: uppercase;
+
 }
 
 h2 {
@@ -49,15 +52,16 @@ h2 {
 
 h3 {
     font-size: 1.5rem;
-    line-height: 2rem;
+    line-height: auto;
     text-decoration: none;
-    font-weight: 500;
+    font-weight: 700;
     text-transform: uppercase;
 }
 
 h4 {
-    font-size: 1rem;
-    line-height: 1.5rem;
+    font-size: 1.5rem;
+    line-height: auto;
+    font-weight: 500;
 }
 
 h5 {
@@ -65,12 +69,32 @@ h5 {
     font-weight: 600;
 }
 
+h6 {}
+
+sub {
+    font-size: 1.5rem;
+    line-height: auto;
+    font-weight: 500;
+}
+
+p {
+    font-weight: 00;
+}
+
+b {
+    font-weight: bold;
+}
+
+i {
+    font-style: italic;
+}
+
 a {
     text-decoration: underline;
     font-size: 1rem;
 
     &:hover {
-        color: $Main_Gray ;
+        color: $Main_Hover ;
     }
 
 }
@@ -79,8 +103,42 @@ a {
 
 
 
+.header {
+    display: flex;
+    padding: 2.5rem 6rem;
+    justify-content: space-between;
+    width: 100%;
+    z-index: 100;
+    margin: 0 auto;
+    align-self: center;
+    top: 0;
+    position: fixed;
+    color: $Main_Accent;
 
 
+
+    .logo {
+        color: $Main_Accent;
+    }
+
+    .nav {
+        display: flex;
+        gap: .5rem;
+
+        .navButton {
+
+            background-color: $Main_Accent;
+            padding: .25rem 1rem;
+            border-radius: 9999999999px;
+            color: $Main_Black;
+
+            &:hover {
+
+                background-color: $Main_White;
+            }
+        }
+    }
+}
 
 
 .container {
@@ -89,37 +147,7 @@ a {
     width: 100%;
     margin: 0 auto;
 
-    .header {
-        display: flex;
-        padding: 2.5rem 6rem;
-        justify-content: space-between;
-        width: 100%;
-        z-index: 100;
-        margin: 0 auto;
-        align-self: center;
-        top: 0;
-        position: fixed;
 
-
-
-        .logo {}
-
-        .nav {
-            display: flex;
-            gap: .5rem;
-
-            .navButton {
-                color: $Main_Black;
-                background-color: $Main_White;
-                padding: .25rem 1rem;
-                border-radius: 9999999999px;
-
-                &:hover {
-                    color: $Main_Gray ;
-                }
-            }
-        }
-    }
 
     .topSection {
         min-height: 100vh;
@@ -154,42 +182,57 @@ a {
                 display: flex;
                 flex-direction: column;
                 justify-content: end;
-                padding: 4rem;
+                padding: 0rem;
                 text-decoration: none;
                 color: $Main_White;
-                background-color: brown;
+                background-color: $Main_Black;
                 background-size: auto 100%;
                 background-position: center;
-                transition: all 0.3s;
+                transition: all 1s;
                 background-repeat: no-repeat;
-        
+
+
+                .textContainer {
+                    transition: all 1s;
+                    width: 100%;
+                    align-self: center;
+                    padding: 4rem;
 
 
 
-                h2 {
-                    opacity: 0;
-                    transition: all 0.3s;
-                }
+                    h2 {
+                        opacity: 0;
+                        transition: all 0.3s;
+                    }
 
-                h4 {
-                    opacity: 0;
-                    transition: all 0.3s;
+                    h5 {
+                        opacity: 0;
+                        transition: all 0.3s;
+                    }
+
+
                 }
 
                 &:hover {
-
                     background-size: auto 110%;
-                    transition: all 0.3s;
+                    transition: all 1s;
 
-                    h2 {
-                        display: flex;
-                        opacity: 100%;
+                    .textContainer {
+
+                        transition: all 1s;
+                        background-image: linear-gradient(to bottom, $NoColor, $Main_Black);
+
+                        h2 {
+                            display: flex;
+                            opacity: 100%;
+                        }
+
+                        h5 {
+                            display: flex;
+                            opacity: 100%;
+                        }
                     }
 
-                    h4 {
-                        display: flex;
-                        opacity: 100%;
-                    }
                 }
             }
         }
@@ -225,33 +268,35 @@ a {
         }
     }
 
-    .footer {
-        background-color: $Main_Black;
 
-        .footerFrame {
-            display: flex;
-            justify-content: space-between;
-            padding: 3rem 6rem;
-
-            .logo {}
-
-            .socialLinks {
-                color: $Main_White;
-                display: flex;
-                gap: 2rem;
-                text-decoration: underline;
-            }
-        }
-
-    }
 }
 
+.footer {
+    background-color: $Main_Black;
 
+    .footerFrame {
+        display: flex;
+        justify-content: space-between;
+        padding: 4rem 6rem;
+        border-top: 1px solid $OpacityWhite;
+
+        .logo {}
+
+        .socialLinks {
+            color: $Main_White;
+            display: flex;
+            gap: 2rem;
+            text-decoration: underline;
+        }
+    }
+
+}
 
 .Project {
+    
     width: 100%;
     margin: 0 auto;
-    background-color: $ColorChange;
+    white-space: pre-line;
 
     .topFramedContent {
         width: 100%;
@@ -299,88 +344,113 @@ a {
         .project {
             display: flex;
             flex-direction: column;
-            gap: 6rem;
+            gap: 16rem;
 
             .introProject {
                 display: flex;
-                gap: 1rem;
+                flex-direction: column;
+                gap: 3rem;
                 width: 100%;
                 justify-content: space-between;
 
-                .mainTitles {
+                .textArea {
+
                     display: flex;
-                    flex-direction: column;
-                    gap: 0rem;
+                    justify-content: space-between;
 
-                    .projectTitle {}
+                    .mainTitles {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 0rem;
 
-                    .projectSubtitle {}
+                        .projectTitle {}
+
+                        .projectSubtitle {}
+                    }
+
+                    .projectDescription {
+
+                        width: 50%;
+                        display: flex;
+                        flex-direction: column;
+                        gap: 1rem;
+
+
+                        .projectSkills {
+                            display: flex;
+                            gap: 1rem;
+
+
+
+                            .skills {
+                                padding: 0 1rem;
+                                border-radius: 999999px;
+                                color: $Main_Black;
+                                background-color: $Main_Accent;
+                            }
+
+                        }
+                    }
                 }
 
-                .projectDescription {
-
-                    width: 50%;
+                .videoSection {
+                    width: auto;
+                    height: 90vh;
+                    border-radius: 1rem;
+                    justify-content: center;
                     display: flex;
-                    flex-direction: column;
-                    gap: 1rem;
+                    align-items: center;
+                    background: $OpacityWhite;
+                    padding: 3rem 6rem;
 
 
-                    .projectSkills {
+
+                    video {
                         display: flex;
-                        gap: 1rem;
-                        color: $OpacityBlack;
-
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        border-radius: 1rem;
 
                     }
                 }
             }
 
-            .videoSection {
-                width: auto;
-                height: 80vh;
-                border-radius: 1rem;
-                justify-content: center;
-                display: flex;
-                align-items: center;
-                background: $OpacityBlack;
-                padding: 3rem 6rem;
 
-
-
-                video {
-                    display: flex;
-                    width: 100%;
-                    height: 100%;
-                    object-fit: cover;
-                    border-radius: 1rem;
-
-                }
-            }
 
             .objective {
                 display: flex;
-                gap: 1rem;
+                gap: 2rem;
                 width: 100%;
+                justify-content: center;
                 flex-direction: column;
                 text-align: center;
-                padding: 4rem 0;
+                padding: 0rem 0;
                 max-width: 40%;
                 display: flex;
                 align-self: center;
+                min-height: 40vh;
 
-                .proyectoObjective {
-                    max-width: 30%;
+                .textsObj {
+                    gap: 1rem;
                     display: flex;
-                    align-self: center;
+                    flex-direction: column;
+
+                    .objectiveText {
+                        color: $Main_Hover;
+                    }
+
+                    .proyectoObjective {
+                        max-width: 30%;
+                        display: flex;
+                        align-self: center;
+                    }
                 }
-
-
-
             }
 
             .challenges {
                 display: flex;
-                gap: 2rem;
+                gap: 3rem;
                 width: 100%;
                 flex-direction: column;
 
@@ -396,6 +466,8 @@ a {
                     img {
                         width: 100%;
                         object-fit: cover;
+                        max-width: 50%;
+                        background-color: $Main_White;
                     }
                 }
 
@@ -403,7 +475,7 @@ a {
 
             .solutions {
                 display: flex;
-                gap: 2rem;
+                gap: 3rem;
                 width: 100%;
                 flex-direction: column;
 
@@ -419,7 +491,7 @@ a {
 
                     display: grid;
                     grid-template-columns: 1fr 1fr;
-                    grid-template-rows: 40vh 40vh;
+                    grid-template-rows: 30vh 50vh;
                     gap: 2rem 2rem;
 
                     grid-template-areas:
@@ -447,101 +519,7 @@ a {
                 }
             }
 
-            .results {
-                display: flex;
-                gap: 2rem;
-                width: 100%;
-                flex-direction: column;
 
-
-                .qtResults {
-                    align-self: center;
-
-                }
-
-                .projectGallery {
-                    width: 100%;
-                    height: 90vh;
-                    border-radius: 1rem;
-                    display: flex;
-                    align-items: center;
-                    flex-direction: column;
-                    background: $OpacityBlack;
-                    gap: 1rem;
-                    padding: 3rem 4rem;
-
-                    .frameGallery {
-                        display: flex;
-                        height: 100%;
-                        width: 100%;
-                        align-items: center;
-                        justify-content: space-between;
-
-
-                        .photoCarusell {
-                            display: flex;
-                            height: 100%;
-                            width: 100%;
-                            overflow: hidden;
-                            align-items: center;
-                            position: relative;
-
-
-                            .carouselTrack {
-                                display: flex;
-                                width: 100%;
-                                object-fit: cover;
-                                min-width: 100%;
-                                height: 100%;
-                                gap: 1rem;
-
-                                .galleryPhoto {
-                                    min-width: 100%;
-                                    display: flex;
-
-                                    img {
-                                        min-width: 100%;
-                                        object-fit: cover;
-                                        border-radius: 1rem;
-                                    }
-
-                                    & :hover {
-
-                                        opacity: 80%;
-
-                                    }
-                                }
-                            }
-
-
-
-
-
-
-                        }
-
-                        .controlButton {
-                            background: none;
-                            border: none;
-                            z-index: 10;
-                            height: 50%;
-                            display: flex;
-                            align-items: center;
-
-
-                            span {
-                                font-size: 2rem;
-                            }
-
-                            &:hover {
-                                color: $Main_Gray ;
-                            }
-
-                        }
-                    }
-                }
-
-            }
 
 
 
@@ -551,28 +529,164 @@ a {
 }
 
 
-.moreProjects {
+.results {
     display: flex;
-
-    padding: 4rem 6rem;
-    background-color: $Main_Black;
-    color: $Main_White;
+    gap: 1rem;
     width: 100%;
-    gap: 2rem;
-    overflow-x: hidden;
+    flex-direction: column;
+    background-color: $OpacityWhite;
+    border-radius: 1rem;
+    padding-top: 2rem;
 
-    .projectMore {
+    .qtResults {
+        align-self: center;
 
-        background-image: url('/projectImages/el-caudillo/Image (1).webp');
+    }
 
-        background-size: cover;
-        max-width: 40%;
-        min-width: 40%;
+    .projectGallery {
         width: 100%;
-        height: 40vh;
-        align-content: end;
-        padding: 3rem;
+        height: 80vh;
 
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+        gap: 1rem;
+        padding: 2rem 4rem 4rem;
+
+        .frameGallery {
+            display: flex;
+            height: 100%;
+            width: 100%;
+            align-items: center;
+            justify-content: space-between;
+
+
+            .photoCarusell {
+                
+                display: flex;
+                height: 100%;
+                width: 100%;
+                overflow: hidden;
+                align-items: center;
+                position: relative;
+
+
+                .carouselTrack {
+                   
+                    display: flex;
+                    width: 100%;
+                    object-fit: cover;
+                    min-width: 100%;
+                    height: 100%;
+                    gap: 1rem;
+
+                    .galleryPhoto {
+                        min-width: 100%;
+                        display: flex;
+                         background-color: $Main_White;
+                         border-radius: 1.1rem;
+                         width: 100%;
+
+                        img {
+                            min-width: 100%;
+                            object-fit: cover;
+                            border-radius: 1rem;
+                        }
+
+                        & :hover {
+
+                            opacity: 80%;
+
+                        }
+                    }
+                }
+
+
+
+
+
+
+            }
+
+            .controlButton {
+                background: none;
+                border: none;
+                z-index: 10;
+                height: 50%;
+                display: flex;
+                align-items: center;
+
+
+                span {
+                    font-size: 2rem;
+                }
+
+                &:hover {
+                    color: $Main_Hover ;
+                }
+
+            }
+        }
+    }
+
+}
+
+.containerProjects {
+    color: $Main_White;
+    background-color: $Main_Black;
+
+    .textContainer {
+        display: flex;
+        padding: 6rem 2rem 2rem 6rem;
+    }
+
+    .moreProjects::-webkit-scrollbar {
+        display: none;
+    }
+
+    .moreProjects {
+        display: flex;
+        overflow-x: hidden;
+        padding: 0rem 6rem 6rem 6rem;
+        background-color: $Main_Black;
+        color: $Main_White;
+        width: 100%;
+        gap: 2rem;
+        overflow-x: scroll;
+        cursor: grab;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+
+
+        .active {
+            cursor: grabbing;
+        }
+
+        .projectMore {
+
+            cursor: grab;
+            display: flex;
+            align-items: flex-end;
+            flex: 0 0 auto;
+            background-size: cover;
+            max-width: 40%;
+            width: 100%;
+            height: 40vh;
+            align-content: end;
+            padding: 0rem;
+
+            user-select: none;
+            -webkit-user-drag: none;
+            text-decoration: none;
+
+            .projectMoreTexts {
+                width: 100%;
+                padding: 2rem;
+                background: linear-gradient(to top, $Main_Black, transparent);
+            }
+
+        }
     }
 
 
@@ -583,8 +697,8 @@ a {
     // Quick Tag style
     display: flex;
     flex-direction: column;
-    gap: 0rem;
-    width: 40%;
+    gap: .5rem;
+    width: calc(50% - 1rem);
 
 
 }
@@ -598,4 +712,26 @@ a {
     text-decoration: none;
 
 
+}
+
+
+.AboutMe {
+
+    min-height: 100vh;
+    min-width: 100vh;
+    background-color: $Main_White;
+
+    .testArea {
+        color: $Main_Black;
+        padding-top: 4rem;
+    }
+}
+
+.projectsPage {
+    background-color: $Main_Black;
+
+    .topArea {
+        padding: 10rem 6rem;
+        color: $Main_Hover;
+    }
 }

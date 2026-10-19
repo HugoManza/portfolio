@@ -39,31 +39,35 @@ const ProjectTemplate = () => {
                 <div className="frameWidth">
                     <div className="project">
                         <section className="introProject">
-                            <div className="mainTitles">
+                            <div className="textArea">
+                                <div className="mainTitles">
 
-                                <h1 className="projectTitle">{project.title}</h1>
-                                <h4 className="projectSubtitle">{project.subtitle}</h4>
-                            </div>
-
-                            <div className="projectDescription">
-                                <div className="projectSkills">
-                                    {project.skills.map((skill, index) => (
-                                        <h5 key={index} className="skills">{skill}</h5>
-                                    ))}
+                                    <h1 className="projectTitle">{project.title}</h1>
+                                    <h5 className="projectSubtitle">{project.subtitle}</h5>
                                 </div>
-                                <p className="projectSummary">{project.summary}</p>
+
+                                <div className="projectDescription">
+                                    <div className="projectSkills">
+                                        {project.skills.map((skill, index) => (
+                                            <h5 key={index} className="skills">{skill}</h5>
+                                        ))}
+                                    </div>
+                                    <p className="projectSummary">{project.summary}</p>
+                                </div>
                             </div>
-                        </section>
-                        <section className="videoSection">
+                            <div className="videoSection">
 
-                            <video autoPlay loop muted>
-                                <source src={project.videoPromo} type="video/mp4" />
-                            </video>
+                                <video autoPlay loop muted>
+                                    <source src={project.videoPromo} type="video/mp4" />
+                                </video>
+                            </div>
+
 
                         </section>
+
                         <section className="objective">
                             <div className="textsObj">
-                                <p className="objectiveText">Objective</p>
+                                <h5 className="objectiveText">Objective:</h5>
 
                                 <h1 className="proyectObjective">{project.objective}</h1>
                             </div>
@@ -89,13 +93,9 @@ const ProjectTemplate = () => {
                                 <img className="img5" src={project.images.solution3} alt={`${project.title} Solution 3`} />
                             </div>
                         </section>
-                        <section className="results">
-                            <div className="quickTag qtResults">
-                                <h3 className="resultsSub">Results</h3>
-                                <p className="resultsExplained">{project.results}</p>
-                            </div>
-                            <ProjectGallery />
-                        </section>
+
+                        <ProjectGallery />
+
 
                     </div>
                 </div>

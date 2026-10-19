@@ -36,8 +36,8 @@ const Head = () => {
     >
         <Link className="logo" to="/">H.Manzano</Link>
         <nav className="nav">
-          <a className='navButton' href="#projects"><h5>Projects</h5></a>
-          <a className='navButton' href="#about"><h5>About Me</h5></a>
+          <Link to="/Projects" className='navButton'><h5>Projects</h5></Link>
+          <Link to="/AboutMe" className='navButton' ><h5>About Me</h5></Link>
           <a className='navButton' href="#contact"><h5>Contact</h5></a>
         </nav>
       </header>
