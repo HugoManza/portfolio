@@ -55,9 +55,9 @@ const ProjectTemplate = () => {
                                     <p className="projectSummary">{project.summary}</p>
                                 </div>
                             </div>
-                            <div className="videoSection">
+                            <div className="videoSection"  >
 
-                                <video autoPlay loop muted>
+                                <video autoPlay loop muted controls controlsList='nodownload'>
                                     <source src={project.videoPromo} type="video/mp4" />
                                 </video>
                             </div>
@@ -77,7 +77,7 @@ const ProjectTemplate = () => {
                                 <h3 className="challangeSub">Challenge</h3>
                                 <p className="challangeExplained">{project.challenge}</p>
                             </div>
-                            <div className="challangeImages">
+                            <div className="challangeImages" >
                                 <img src={project.images.challenge1} alt="Challenge 1" />
                                 <img src={project.images.challenge2} alt="Challenge 2" />
                             </div>
@@ -94,11 +94,12 @@ const ProjectTemplate = () => {
                             </div>
                         </section>
 
-                        <ProjectGallery />
+                 
 
 
                     </div>
                 </div>
+                <ProjectGallery />
             </div>
             <MoreProjects />
             <Footer />
