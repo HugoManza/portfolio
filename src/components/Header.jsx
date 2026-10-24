@@ -22,25 +22,33 @@ const Head = () => {
   }, [lastScrollY])
 
   return (
-   
-    <header 
-      className="header" 
+
+    <header
+      className="header"
       id="navbar"
-      style={{ 
-        position: 'fixed', 
+      style={{
+        position: 'fixed',
         top: 0,
         transition: 'transform 0.3s ease-in-out',
         transform: isVisible ? 'translateY(0)' : 'translateY(-100%)',
         zIndex: 1000
       }}
     >
-        <Link className="logo" to="/">H.Manzano</Link>
-        <nav className="nav">
-          <Link to="/Projects" className='navButton'><h5>Projects</h5></Link>
-          <Link to="/AboutMe" className='navButton' ><h5>About Me</h5></Link>
-          <a className='navButton' href="#contact"><h5>Contact</h5></a>
-        </nav>
-      </header>
+      <Link className="logo" to="/">H.Manzano</Link>
+      <nav className="nav">
+        <Link to="/Projects" className='navButton'><h5>Projects</h5></Link>
+        <Link to="/AboutMe" className='navButton' ><h5>About Me</h5></Link>
+        <a className='navButton' href="#contact"><h5>Contact</h5></a>
+      </nav>
+
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
+            <link rel="stylesheet" />
+      <section className="menuPhone">
+        <span class="material-symbols-outlined">
+          menu
+        </span>
+      </section>
+    </header>
   )
 }
 

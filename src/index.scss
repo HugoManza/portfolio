@@ -6,8 +6,6 @@
         'opsz' 24
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
-
 //Color Variables
 $Main_Black: #101011;
 $Main_White: #fafafa;
@@ -20,7 +18,7 @@ $NoColor: rgba(253, 253, 253, 0);
 
 
 * {
-    border: 1px solid tomato;
+    border: 0px solid tomato;
 }
 
 html {}
@@ -143,6 +141,10 @@ a {
                 background-color: $Main_White;
             }
         }
+    }
+
+    .menuPhone {
+        display: none;
     }
 }
 
@@ -753,22 +755,43 @@ a {
 
     body {}
 
-    h1 {}
+    h1 {
+        font-size: 2rem;
+        line-height: 2rem;
+    }
 
-    h2 {}
+    h2 {
+        font-size: 2rem;
+        line-height: 2rem;
+    }
 
     h3 {}
 
     h4 {}
 
-    h5 {}
+    h5 {
+        font-size: 1rem;
+    }
+
+    p {}
 
 
 
     .header {
         padding: 2rem 1rem;
-    }
 
+        .logo {
+            font-size: 2rem;
+        }
+
+        .nav {
+            .navButton {
+                font-size: .75rem;
+                padding: 0;
+            }
+        }
+
+    }
 
     .footer {
 
@@ -785,7 +808,65 @@ a {
                 padding: 2rem 1rem;
                 display: flex;
                 flex-direction: column;
+
+                .ProjectClick {
+
+                    min-height: 55vh;
+
+
+                    .textContainer {
+                        padding: .5rem;
+                    }
+                }
             }
         }
+    }
+
+    .Project {
+
+        .frameWidth {
+
+            padding: 2rem 1rem;
+            margin: 2rem auto 1rem;
+
+            .topFramedContent {
+                flex-direction: column;
+            }
+
+            .project {
+                gap: 2rem;
+
+                .introProject {
+                    flex-direction: column;
+
+                    .textArea {
+                        justify-content: center;
+                        flex-direction: column;
+                         gap: 1rem;
+
+                        .projectDescription {
+                            width: 100%;
+                           
+
+                            .projectSkills {
+                                justify-content: space-between;
+
+                                .skills {
+                                    padding: 0 .25rem;
+                                }
+                            }
+                        }
+                    }
+
+                    .videoSection {
+                        padding: 1rem;
+                    }
+                }
+            }
+        }
+    }
+
+    .quickTag {
+        width: 100%;
     }
 }
