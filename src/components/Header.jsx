@@ -34,14 +34,15 @@ const Head = () => {
         zIndex: 1000
       }}
     >
-      <Link className="logo" to="/">H.Manzano</Link>
+      <Link className="logo logoDesktop" to="/">HManzano</Link>
+      <Link className='logo logoPhone' to="/">HM</Link>
       <nav className="nav">
         <Link to="/Projects" className='navButton'><h5>Projects</h5></Link>
         <Link to="/AboutMe" className='navButton' ><h5>About Me</h5></Link>
         <a className='navButton' href="#contact"><h5>Contact</h5></a>
       </nav>
 
-      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=chevron_right,chevron_left,menu" />
             <link rel="stylesheet" />
       <section className="menuPhone">
         <span class="material-symbols-outlined">
