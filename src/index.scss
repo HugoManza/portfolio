@@ -120,7 +120,9 @@ a {
     color: $Main_Accent;
 
 
-
+.logoPhone {
+    display: none;
+}
     .logo {
         color: $Main_Accent;
     }
@@ -286,6 +288,9 @@ a {
 
         .logo {}
 
+        .logoPhone {
+            display: none;
+        }
         .socialLinks {
             color: $Main_White;
             display: flex;
@@ -782,6 +787,10 @@ a {
         .logoDesktop {
             display: none;
         }
+
+        .logoPhone {
+            display: flex;
+        }
         .logo {
             font-size: rem;
         }
@@ -802,6 +811,11 @@ a {
 
             .logoDesktop {
                 display: none;
+            }
+
+            .logoPhone {
+
+                display: flex;
             }
         }
 
