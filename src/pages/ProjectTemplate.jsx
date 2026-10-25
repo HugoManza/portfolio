@@ -30,11 +30,10 @@ const ProjectTemplate = () => {
 
             <div className="Project" style={{ backgroundColor: project.bgColor, color: project.textColor }}>
                 <div className="topFramedContent">
-                    <video autoPlay loop muted>
+                    <video key={project.id} autoPlay loop muted>
                         <source src={project.videoPromo} type="video/mp4" />
                     </video>
                 </div>
-
 
                 <div className="frameWidth">
                     <div className="project">
@@ -55,13 +54,11 @@ const ProjectTemplate = () => {
                                     <p className="projectSummary">{project.summary}</p>
                                 </div>
                             </div>
-                            <div className="videoSection"  >
-
-                                <video autoPlay loop muted controls controlsList='nodownload'>
+                            <div className="videoSection">
+                                <video key={project.id} autoPlay loop muted controls controlsList='nodownload'>
                                     <source src={project.videoPromo} type="video/mp4" />
                                 </video>
                             </div>
-
 
                         </section>
 
@@ -94,7 +91,7 @@ const ProjectTemplate = () => {
                             </div>
                         </section>
 
-                 
+
 
 
                     </div>

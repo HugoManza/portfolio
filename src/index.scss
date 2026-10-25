@@ -9,7 +9,7 @@
 //Color Variables
 $Main_Black: #101011;
 $Main_White: #fafafa;
-$Main_Accent: #ffbe00;
+$Main_Accent: #ff2b2b;
 $Main_Hover: #fcd706;
 $OpacityBlack: rgba(10, 10, 11, 0.8);
 $OpacityWhite: rgba(128, 128, 128, 0.25);
@@ -120,11 +120,16 @@ a {
     color: $Main_Accent;
 
 
-.logoPhone {
-    display: none;
-}
+    .logoPhone {
+        display: none;
+    }
+
     .logo {
-        color: $Main_Accent;
+        color: $Main_White;
+
+        &:hover {
+            color: $Main_Accent
+        }
     }
 
     .nav {
@@ -133,14 +138,18 @@ a {
 
         .navButton {
 
-            background-color: $Main_Accent;
+            background-color: $Main_White;
             padding: .25rem 1rem;
             border-radius: 9999999999px;
             color: $Main_Black;
 
             &:hover {
+                color: $Main_White;
+                background-color: $Main_Accent;
+            }
 
-                background-color: $Main_White;
+            &:focus {
+                border: 1px $OpacityBlack solid;
             }
         }
     }
@@ -151,7 +160,7 @@ a {
 }
 
 
-//PRoject select area
+//Project select area
 .container {
     display: flex;
     flex-direction: column;
@@ -200,7 +209,16 @@ a {
                 height: 100%;
                 overflow: hidden;
                 position: relative;
+                border: 1px solid;
+                box-sizing: border-box;
 
+                &:focus {
+                    border: .25rem $OpacityBlack solid;
+                }
+
+                &:hover {
+                    border: 1px $OpacityBlack solid
+                }
 
                 .imageContainer {
                     position: absolute;
@@ -291,6 +309,7 @@ a {
         .logoPhone {
             display: none;
         }
+
         .socialLinks {
             color: $Main_White;
             display: flex;
@@ -395,7 +414,7 @@ a {
                             .skills {
                                 padding: 0 1rem;
                                 border-radius: 999999px;
-                                color: $Main_Black;
+                                color: $Main_White;
                                 background-color: $Main_Accent;
                             }
 
@@ -791,6 +810,7 @@ a {
         .logoPhone {
             display: flex;
         }
+
         .logo {
             font-size: rem;
         }
