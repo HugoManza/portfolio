@@ -34,7 +34,7 @@ const Head = () => {
         zIndex: 1000
       }}
     >
-      <Link className="logo logoDesktop" to="/">Hugo Manzano</Link>
+      <Link className="logo logoDesktop" to="/">HManzano</Link>
       <Link className='logo logoPhone' to="/">HM</Link>
       <nav className="nav">
         <Link to="/Projects" className='navButton'><h5>Projects</h5></Link>

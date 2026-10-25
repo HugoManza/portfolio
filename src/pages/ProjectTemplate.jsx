@@ -71,7 +71,7 @@ const ProjectTemplate = () => {
                         </section>
                         <section className="challenges">
                             <div className="quickTag qtChallenge">
-                                <h3 className="challangeSub">Challenge</h3>
+                                <h3 className="challangeSub qtSub">Challenge</h3>
                                 <p className="challangeExplained">{project.challenge}</p>
                             </div>
                             <div className="challangeImages" >
@@ -81,7 +81,7 @@ const ProjectTemplate = () => {
                         </section>
                         <section className="solutions">
                             <div className="quickTag qtSolution">
-                                <h3 className="solutionSub">Solution</h3>
+                                <h3 className="solutionSub qtSub">Solution</h3>
                                 <p className="solutionExplained">{project.solution}</p>
                             </div>
                             <div className="solutionImages">
