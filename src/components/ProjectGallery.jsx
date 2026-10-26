@@ -54,50 +54,40 @@ const ProjectGallery = () => {
     };
 
     return (
-        <div className="containerResults">
-            <div className="opacity"></div>
-            
-            <section className="results">
-                <div className="quickTag qtResults">
-                    <h3 className="resultsSub">Results</h3>
-                    <p className="resultsExplained">{project.results}</p>
-                </div>
 
-                <div className="projectGallery">
+         <div className="projectGallery">
 
 
-                    <div className="frameGallery">
-                        <button onClick={prevPhoto} className="controlButton back">
-                            <span className="material-symbols-outlined">chevron_left</span>
-                        </button>
-                        <div className="photoCarusell" style={{ color: project.textColor }}>
-                            <div className="carouselTrack"
-                                onTransitionEnd={handleTransitionEnd}
-                                style={{
-                                    transform: `translateX(calc(-${currentIndex} * (100% + 1rem)))`,
-                                    transition: isTransitioning ? 'transform 0.4s ease-in-out' : 'none'
-                                }}>
-                                {extendedGallery.map((foto, index) => (
-                                    <a
-                                        key={index}
-                                        target="_blank"
-                                        href={foto}
-                                        className="galleryPhoto"
-                                        rel="noreferrer">
+                <div className="frameGallery">
+                    <button onClick={prevPhoto} className="controlButton back"  >
+                        <span className="material-symbols-outlined">chevron_left</span>
+                    </button>
+                    <div className="photoCarusell" >
+                        <div className="carouselTrack"
+                            onTransitionEnd={handleTransitionEnd}
+                            style={{
+                                transform: `translateX(calc(-${currentIndex} * (100% + 1rem)))`,
+                                transition: isTransitioning ? 'transform 0.4s ease-in-out' : 'none'
+                            }}>
+                            {extendedGallery.map((foto, index) => (
+                                <a
+                                    key={index}
+                                    target="_blank"
+                                    href={foto}
+                                    className="galleryPhoto"
+                                    rel="noreferrer">
 
-                                        <img src={foto} alt={`${project.title} Gallery ${index}`} />
-                                    </a>
-                                ))}
-                            </div>
+                                    <img src={foto} alt={`${project.title} Gallery ${index}`} />
+                                </a>
+                            ))}
                         </div>
-                        <button onClick={nextPhoto} className="controlButton next">
-                            <span className="material-symbols-outlined">chevron_right</span>
-                        </button>
                     </div>
-                    <a className="galleryButton"></a>
+                    <button onClick={nextPhoto} className="controlButton next">
+                        <span className="material-symbols-outlined">chevron_right</span>
+                    </button>
                 </div>
-            </section>
-        </div>
+             
+            </div>
     )
 }
 

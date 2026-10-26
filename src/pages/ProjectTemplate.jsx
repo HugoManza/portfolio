@@ -4,7 +4,7 @@ import Header from '../components/Header'
 import { Link } from 'react-router-dom'
 import Footer from '../components/Footer'
 import MoreProjects from '../components/MoreProjects'
-import Results from '../components/Results'
+
 import { projectsData } from '../data/projectsData'
 import ProjectGallery from '../components/ProjectGallery.jsx'
 
@@ -28,75 +28,118 @@ const ProjectTemplate = () => {
             <link rel="stylesheet" />
             <Header />
 
-            <div className="Project" style={{ backgroundColor: project.bgColor, color: project.textColor }}>
+            <div className="Project" >
                 <div className="topFramedContent">
-                    <video key={project.id} autoPlay loop muted>
-                        <source src={project.videoPromo} type="video/mp4" />
-                    </video>
+                    {project.videoPromo ? (
+                        // Si hay un videoPromo, renderiza el video
+                        <video className='topVideo' key={project.id} autoPlay loop muted>
+                            <source src={project.videoPromo} type="video/mp4" />
+                        </video>
+                    ) : (
+                        // Si NO hay videoPromo (es vacío o null), renderiza la imagen
+                        <img
+                            src={project.images.galleryCover}
+                            alt={`${project.title} Cover`}
+                            key={project.id}
+                            className="topImageContent"
+                        />
+                    )}
                 </div>
 
                 <div className="frameWidth">
-                    <div className="project">
-                        <section className="introProject">
-                            <div className="textArea">
-                                <div className="mainTitles">
 
-                                    <h1 className="projectTitle">{project.title}</h1>
-                                    <h5 className="projectSubtitle">{project.subtitle}</h5>
+                    <section className="introProject">
+                        <div className="introTexts">
+                            <div className="skillsFrame">
+                                {project.skills.map((skill, index) => (
+                                    <h5 key={index} className="skills" style={{ backgroundColor: project.projectColor }}>{skill}</h5>
+                                ))}
+                            </div>
+                            <div className="titleFrame">
+
+                                <h1 className="projectTitle">{project.title}</h1>
+                                <h3 className="projectSubtitle">{project.subtitle}</h3>
+                            </div>
+                            <div className="summaryFrame">
+
+                                <p className="projectSummary">{project.summary}</p>
+
+                            </div>
+                        </div>
+                        <div className="imageContainer">
+                            <img src={project.images.topImage} alt={project.title} />
+
+                        </div>
+
+
+                    </section>
+
+                    <section className="projectDark" style={{ borderColor: project.projectColor }}>
+
+                        <div className="objectives">
+                            <div className="objContainer">
+                                <h2 className="proyectObjective">{project.objective}</h2>
+                            </div>
+                            <div className="roundShape" style={{ backgroundColor: project.projectColor }}></div>
+                            <h4 className="objectiveHalf">{project.objectiveHalf} </h4>
+                        </div>
+
+                        <ProjectGallery ></ProjectGallery>
+
+                        <div className="galleryGrid">
+                            <div className="imagesFramed">
+                                <div className="imageCont"><img src={project.images.grid1} alt="" /></div>
+                                <div className="imageCont"><img src={project.images.grid2} alt="" /></div>
+                            </div>
+                            <div className="imagesFramed">
+                                <div className="imageCont"><img src={project.images.grid3} alt="" /></div>
+                                <div className="imageCont"><img src={project.images.grid4} alt="" /></div>
+                            </div>
+                            <div className="imagesFramed">
+                                <div className="imageCont"><img src={project.images.grid5} alt="" /></div>
+                                <div className="imageCont"><img src={project.images.grid6} alt="" /></div>
+                            </div>
+
+                            <div className="galleryExplained">
+                                <div className="explainedText">
+                                    <h2>{project.remark}</h2>
+                                    <p>{project.remarkText} </p>
                                 </div>
+                                <div className="imageCont"><img src={project.images.grid5} alt="" /></div>
 
-                                <div className="projectDescription">
-                                    <div className="projectSkills">
-                                        {project.skills.map((skill, index) => (
-                                            <h5 key={index} className="skills">{skill}</h5>
-                                        ))}
-                                    </div>
-                                    <p className="projectSummary">{project.summary}</p>
-                                </div>
                             </div>
-                            <div className="videoSection">
-                                <video key={project.id} autoPlay loop muted controls controlsList='nodownload'>
-                                    <source src={project.videoPromo} type="video/mp4" />
-                                </video>
+                        </div>
+                    </section>
+
+                    <section className="takeaways" style={{
+                        backgroundImage: `url("${project.images.topImage}")`,
+                        backgroundSize: 'cover',
+                        backgroundPosition: 'center'
+                    }} >
+                        <div className="takeawaysFrame">
+                            <div className="takeawayBox">
+                                <h3>{project.takeaway1}</h3>
+                                <h4>{project.takeawayText1}</h4>
                             </div>
-
-                        </section>
-
-                        <section className="objective">
-                            <div className="textsObj">
-                                <h5 className="objectiveText">Objective:</h5>
-
-                                <h1 className="proyectObjective">{project.objective}</h1>
+                            <div className="takeawayBox">
+                                <h3>{project.takeaway2}</h3>
+                                <h4>{project.takeawayText2}</h4>
                             </div>
-                        </section>
-                        <section className="challenges">
-                            <div className="quickTag qtChallenge">
-                                <h3 className="challangeSub qtSub">Challenge</h3>
-                                <p className="challangeExplained">{project.challenge}</p>
+                            <div className="takeawayBox">
+                                <h3>{project.takeaway3}</h3>
+                                <h4>{project.takeawayText3}</h4>
                             </div>
-                            <div className="challangeImages" >
-                                <img src={project.images.challenge1} alt="Challenge 1" />
-                                <img src={project.images.challenge2} alt="Challenge 2" />
-                            </div>
-                        </section>
-                        <section className="solutions">
-                            <div className="quickTag qtSolution">
-                                <h3 className="solutionSub qtSub">Solution</h3>
-                                <p className="solutionExplained">{project.solution}</p>
-                            </div>
-                            <div className="solutionImages">
-                                <img className="img3" src={project.images.solution1} alt={`${project.title} Solution 1`} />
-                                <img className="img4" src={project.images.solution2} alt={`${project.title} Solution 2`} />
-                                <img className="img5" src={project.images.solution3} alt={`${project.title} Solution 3`} />
-                            </div>
-                        </section>
+                        </div>
+                    </section>
 
 
 
 
-                    </div>
+
+
+
                 </div>
-                <ProjectGallery />
+
             </div>
             <MoreProjects />
             <Footer />
