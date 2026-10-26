@@ -18,7 +18,7 @@ $NoColor: rgba(253, 253, 253, 0);
 
 
 * {
-    border: 1px solid tomato;
+    border: 0px solid tomato;
 }
 
 html {}
@@ -486,7 +486,7 @@ a {
 
             .projectGallery {
                 width: 100%;
-                max-width:83%;
+                max-width: 83%;
                 height: 90vh;
                 display: flex;
                 align-items: center;
@@ -502,6 +502,16 @@ a {
                     justify-content: space-between;
                     gap: 1rem;
 
+                    .controlButtonDesktop {
+                        display: flex;
+                    }
+
+                    .mobilePhoneIcons {
+                        .controlButtonMobile {
+                            display: none;
+                        }
+
+                    }
 
                     .photoCarusell {
 
@@ -562,7 +572,6 @@ a {
 
                         span {
                             font-size: 3rem;
-
                         }
 
                         &:hover {
@@ -591,7 +600,7 @@ a {
                     object-fit: cover;
                     height: 50vh;
                     gap: 1rem;
-                  
+
 
                     .imageCont {
                         width: 100%;
@@ -662,7 +671,7 @@ a {
                     width: 25%;
                     min-height: 50vh;
 
-                    
+
                     /* From https://css.glass */
                     background: rgba(255, 255, 255, 0.2);
                     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -732,7 +741,6 @@ a {
             height: 40vh;
             align-content: end;
             padding: 0rem;
-
             user-select: none;
             -webkit-user-drag: none;
             text-decoration: none;
@@ -858,6 +866,10 @@ a {
 
                 display: flex;
             }
+
+            .socialLinks {
+                gap: 1rem;
+            }
         }
 
     }
@@ -885,24 +897,28 @@ a {
 
     .Project {
         .topFramedContent {
-            max-height: 40vh;
+            max-height: 50vh;
+            height: 50vh;
 
             .topImageContent {}
         }
 
 
         .frameWidth {
-
-
-            margin: 2rem auto 0rem;
+            padding-top: 2rem;
 
             .introProject {
-                max-width: 90vw;
+                max-width: 95vw;
                 flex-direction: column;
                 margin-bottom: 2rem;
 
                 .introTexts {
                     width: 100%;
+                    gap: 1.5rem;
+
+                    .titleFrame {
+                        gap: .25rem;
+                    }
 
                     .skillsFrame {
                         justify-content: space-between;
@@ -929,10 +945,13 @@ a {
                 .objectives {
                     flex-direction: column;
                     gap: 1rem;
+                    width: 95%;
+                    max-width: 100%;
 
                     .objContainer {
-                        width: 90%;
+                        width: 100%;
                         text-align: center;
+                        max-width: 100%;
                     }
 
                     .roundShape {
@@ -941,34 +960,65 @@ a {
                     }
 
                     .objectiveHalf {
-                        width: 80%;
+                        width: 90%;
+                        max-width: 100%;
                     }
                 }
 
                 .projectGallery {
-                    padding: 0 .25rem;
-                    height: 30vh;
+
+                    height: 40vh;
+                    max-width: 95%;
 
                     .frameGallery {
                         gap: 0;
+                        align-self: center;
+                        flex-direction: column;
 
-                        .controlButton {
+                        .controlButtonDesktop {
+                            display: none;
+
+
+                        }
+
+                        .mobilePhoneIcons {
+                            width: 100%;
+                            justify-content: space-around;
+                            display: flex;
+                            height: fit-content;
+                            align-items: center;
+                            padding-top: .5rem;
+
+                            .controlButton {
+                                width: 30%;
+                                text-align: center;
+                            }
+
                             span {
-                                font-size: 1.75rem;
+                                font-size: 2rem;
+                                width: 100%;
+                            }
+
+                            .controlButtonMobile {
+                                display: flex;
                             }
                         }
                     }
                 }
 
                 .galleryGrid {
-                    width: 90%;
-                    gap: 2.25rem;
-
+                    width: 100%;
+                    gap: 1rem;
+                    max-width: 95%;
 
                     .imagesFramed {
+                        display: flex   ;
                         flex-direction: column;
                         min-height: 60vh;
                         height: auto;
+                        max-width: 100%;
+                        width: 100%;
+                        gap: .5rem;
 
                         .imageCont {
                             max-height: 50%;
@@ -985,7 +1035,7 @@ a {
                     .galleryExplained {
                         flex-direction: column-reverse;
 
-                         .imageCont {
+                        .imageCont {
                             max-height: 50%;
 
                             img {
@@ -1006,10 +1056,15 @@ a {
             }
 
             .takeaways {
+                padding-top: 4rem;
+                padding-bottom: 4rem;
+
                 .takeawaysFrame {
                     gap: 2rem;
                     justify-content: center;
                     flex-direction: column;
+                    max-width: 95%;
+
                     .takeawayBox {
                         width: 100%;
                         min-height: auto;
@@ -1044,15 +1099,15 @@ a {
 
         .moreProjects {
             padding: 1rem;
-            max-height: 20vh;
             gap: 1rem;
 
             .projectMore {
                 height: auto;
-                min-height: 15vh;
+                min-height: 30vh;
+                max-width: 80%;
 
                 .projectMoreTexts {
-                    padding: .25rem;
+                    padding: 1rem;
 
                     h2 {
                         font-size: 1.25rem;
