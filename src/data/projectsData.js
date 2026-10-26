@@ -21,9 +21,9 @@ export const projectsData = [
         takeaway1: "Learning from our history",
         takeawayText1: "Of course all of this was then also applied to a selling point web, made on figma and prototyped for both desktop users and phone.They were made from scratchand geometric chapes",
         takeaway2: "Printing and colors",
-        takeawayText2: "Of course all of this was then also applied to a selling point web, made on figma and prototyped for both desktop users and phone.They were made from scratchand geometric chapes",
+        takeawayText2: "Of  also applied to a selling point web, made on figma and prototyped for both desktop users and phone.They were made from scratchand geometric chapes",
         takeaway3: "Icons and Ilustrations",
-        takeawayText3: "Of course all of this was then also applied to a selling point web, made on figma and prototyped for both desktop users and phone.They were made from scratchand geometric chapes",
+        takeawayText3: "Of cxzczxczxxczxcourse all of this was then also applied to a selling point web, made on figma and prototyped for both desktop users and phone.They were made from scratchand geometric chapes",
 
         videoPromo: "",
         videoProject: "/portfolio/projectImages/el-caudillo/Video2.mp4",

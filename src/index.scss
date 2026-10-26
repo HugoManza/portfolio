@@ -18,7 +18,7 @@ $NoColor: rgba(253, 253, 253, 0);
 
 
 * {
-    border: 0px solid tomato;
+    border: 1px solid tomato;
 }
 
 html {}
@@ -71,7 +71,7 @@ h5 {
     font-family: Josefin Sans;
     font-size: 1.25rem;
     font-weight: 400;
-     text-decoration: none;
+    text-decoration: none;
 }
 
 h6 {}
@@ -150,7 +150,7 @@ a {
 
             background-color: $Main_White;
             padding: 0rem 1.25rem;
-            padding-top: .25rem ;
+            padding-top: .25rem;
             padding-top: 3px;
 
             color: $Main_Black;
@@ -377,12 +377,10 @@ a {
 
         .introProject {
             display: flex;
-
             justify-content: center;
             gap: 1rem;
-
             width: 100%;
-            max-width: 1442px;
+            max-width: 76%;
             min-height: fit-content;
             height: 50vh;
             margin-bottom: 8rem;
@@ -458,7 +456,7 @@ a {
             overflow-x: hidden;
 
             .objectives {
-                max-width: 1442px;
+                max-width: 76%;
                 display: flex;
                 color: $Main_White;
                 align-items: center;
@@ -488,13 +486,11 @@ a {
 
             .projectGallery {
                 width: 100%;
-                max-width: 1572px;
+                max-width:83%;
                 height: 90vh;
-
                 display: flex;
                 align-items: center;
                 flex-direction: column;
-
                 gap: 1rem;
 
 
@@ -580,7 +576,7 @@ a {
 
             .galleryGrid {
                 display: flex;
-                max-width: 1442px;
+                max-width: 76%;
                 flex-direction: column;
                 gap: 1rem;
                 justify-content: center;
@@ -595,10 +591,12 @@ a {
                     object-fit: cover;
                     height: 50vh;
                     gap: 1rem;
-                    justify-content: space-around;
+                  
 
                     .imageCont {
                         width: 100%;
+                        display: flex;
+                        object-fit: cover;
 
                         img {
                             width: 100%;
@@ -650,7 +648,7 @@ a {
             object-fit: cover;
 
             .takeawaysFrame {
-                max-width: 1440px;
+                max-width: 76%;
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
@@ -662,6 +660,9 @@ a {
                     gap: 2rem;
                     padding: 2rem;
                     width: 25%;
+                    min-height: 50vh;
+
+                    
                     /* From https://css.glass */
                     background: rgba(255, 255, 255, 0.2);
                     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -786,34 +787,42 @@ a {
 }
 
 
-@media (max-width: 720px) {
+@media (max-width: 1080px) {
 
     body {}
 
     h1 {
-        font-size: 2rem;
-        line-height: 2rem;
+        font-size: 2.25rem;
+        line-height: normal;
     }
 
     h2 {
-        font-size: 2rem;
+        font-size: 1.75rem;
         line-height: 2rem;
     }
 
-    h3 {}
-
-    h4 {}
-
-    h5 {
-        font-size: 1rem;
+    h3 {
+        font-size: 1.5rem;
     }
 
-    p {}
+    h4 {
+        font-size: 1.5rem;
+    }
+
+    h5 {
+        font-size: 1.125rem;
+    }
+
+    p {
+        font-size: 1.125rem;
+    }
 
 
 
     .header {
         padding: 2rem 1rem;
+        width: 100%;
+        border-radius: 0;
 
         .logoDesktop {
             display: none;
@@ -830,7 +839,7 @@ a {
         .nav {
             .navButton {
                 font-size: .75rem;
-                padding: 0;
+                padding: 0 0.25rem;
             }
         }
 
@@ -884,76 +893,126 @@ a {
 
         .frameWidth {
 
-            padding: 2rem 1rem 0rem;
+
             margin: 2rem auto 0rem;
 
-            .topFramedContent {
+            .introProject {
+                max-width: 90vw;
                 flex-direction: column;
+                margin-bottom: 2rem;
 
+                .introTexts {
+                    width: 100%;
+
+                    .skillsFrame {
+                        justify-content: space-between;
+
+                        .skills {
+                            padding: 0 .25rem;
+                        }
+                    }
+                }
+
+                .imageContainer {
+                    width: 100%;
+                    height: 70vh;
+                }
 
             }
 
-            .project {
-                gap: 4rem;
+            .projectDark {
 
-                .introProject {
+                padding-top: 2rem;
+                padding-bottom: 4rem;
+                gap: 2rem;
+
+                .objectives {
                     flex-direction: column;
+                    gap: 1rem;
 
-                    .textArea {
-                        justify-content: center;
+                    .objContainer {
+                        width: 90%;
+                        text-align: center;
+                    }
+
+                    .roundShape {
+                        display: none;
+
+                    }
+
+                    .objectiveHalf {
+                        width: 80%;
+                    }
+                }
+
+                .projectGallery {
+                    padding: 0 .25rem;
+                    height: 30vh;
+
+                    .frameGallery {
+                        gap: 0;
+
+                        .controlButton {
+                            span {
+                                font-size: 1.75rem;
+                            }
+                        }
+                    }
+                }
+
+                .galleryGrid {
+                    width: 90%;
+                    gap: 2.25rem;
+
+
+                    .imagesFramed {
                         flex-direction: column;
-                        gap: 1rem;
+                        min-height: 60vh;
+                        height: auto;
 
-                        .projectDescription {
-                            width: 100%;
+                        .imageCont {
+                            max-height: 50%;
 
+                            img {
 
-                            .projectSkills {
-                                justify-content: space-between;
-
-                                .skills {
-                                    padding: 0 .25rem;
-                                }
+                                width: 100%;
+                                height: 30vh;
+                                object-fit: cover;
                             }
                         }
                     }
 
-                    .videoSection {
-                        padding: 1rem;
-                    }
-                }
+                    .galleryExplained {
+                        flex-direction: column-reverse;
 
-                .challenges {
-                    gap: 1rem;
+                         .imageCont {
+                            max-height: 50%;
 
-                    .challangeImages {
-                        padding: 1rem;
-                        flex-direction: column;
-                        height: auto;
+                            img {
 
-                        img {
-                            max-width: 100%;
+                                width: 100%;
+                                height: 30vh;
+                                object-fit: cover;
+                            }
+                        }
 
-
-
+                        .explainedText {
+                            p {
+                                width: 100%;
+                            }
                         }
                     }
                 }
+            }
 
-                .solutions {
-
-                    gap: 1rem;
-
-                    .solutionImages {
-
-                        padding: 1rem;
-                        display: flex;
-                        flex-direction: column;
-
-                        img {
-                            max-height: 30vh;
-                            min-height: 30vh;
-                        }
+            .takeaways {
+                .takeawaysFrame {
+                    gap: 2rem;
+                    justify-content: center;
+                    flex-direction: column;
+                    .takeawayBox {
+                        width: 100%;
+                        min-height: auto;
                     }
                 }
             }
