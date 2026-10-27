@@ -19,7 +19,7 @@ $NoColor: rgba(253, 253, 253, 0);
 
 
 * {
-    border: 0px solid tomato;
+    border: 1px solid tomato;
 }
 
 html {}
@@ -27,7 +27,7 @@ html {}
 body {
     font-family: Josefin-Sans, Inter, Arial, Helvetica, sans-serif;
     font-size: 1rem;
-    line-height: 1.5rem;
+    line-height: normal;
     background-color: $Main_White ;
     min-height: 100vh;
 
@@ -119,7 +119,7 @@ a {
     align-self: center;
     top: 0;
     position: fixed;
-    color: $Main_Accent;
+
     border-radius: 0rem 0 1rem 1rem;
 
     /* From https://css.glass */
@@ -145,25 +145,30 @@ a {
 
     .nav {
         display: flex;
-        gap: .5rem;
-
-        .navButton {
 
 
-            padding: 0rem 1.25rem;
-            padding-top: .25rem;
-            padding-top: 3px;
+        .navItems {
+            gap: 1.5rem;
+            display: flex;
 
-            color: $Main_Black;
+            .navButton {
 
-            &:hover {
-                color: $Main_Accent;
+                padding-top: 3px;
+                color: $Main_Black;
 
+                &:hover {
+                    color: $Main_Accent;
+                }
+
+                &:focus {
+                    border: 1px $OpacityBlack solid;
+                }
             }
+        }
 
-            &:focus {
-                border: 1px $OpacityBlack solid;
-            }
+
+        .mobileMenu {
+            display: none;
         }
     }
 
@@ -342,15 +347,13 @@ a {
     .topFramedContent {
         width: 100%;
         height: 100vh;
-        z-index: 1;
-        border-radius: 0rem;
+
+
         justify-content: center;
         display: flex;
         align-items: center;
-        -webkit-display: flex;
 
-        -webkit-transform: translate3d(0, 0, 0);
-        z-index: 999;
+
 
         .topImageContent {
 
@@ -703,17 +706,17 @@ a {
 .containerProjects {
     color: $Main_White;
     background-color: $backgroundBlack;
-    
+
 
 
     .textContainer {
         display: flex;
         flex-direction: column;
         gap: .5rem;
-        
+
         padding: 4rem 2rem .5rem 6rem;
         border-top: 4px solid white;
-      
+
     }
 
     .moreProjects::-webkit-scrollbar {
@@ -824,19 +827,21 @@ a {
     }
 
     h5 {
-        font-size: 1.125rem;
+        font-size: 1.25rem;
     }
 
     p {
-        font-size: 1.125rem;
+        font-size: 1.25rem;
+        font-weight: 300;
     }
 
 
 
     .header {
-        padding: 2rem 1rem;
+        padding: 1rem 1rem;
         width: 100%;
         border-radius: 0;
+        align-items: center;
 
         .logoDesktop {
             display: none;
@@ -851,10 +856,43 @@ a {
         }
 
         .nav {
-            .navButton {
-                font-size: .75rem;
-                padding: 0 0.25rem;
+            align-items: center;
+
+            .navItems {
+                display: none;
+
+                .navButton {
+                    font-size: .75rem;
+                    padding: 0 0.25rem;
+                }
             }
+
+            .mobileMenu {
+                display: flex;
+            }
+        }
+
+        .menuPhone {
+            display: flex;
+            flex-direction: column;
+            width: 100vw;
+
+            background-color: $Main_White;
+            position: absolute;
+            top: 0;
+            left: 0;
+            padding-top: 4rem;
+            height: 100vh;
+            padding-right: 1rem;
+            padding-left: 1rem;
+
+            .navButton {
+                height: 6rem;
+                justify-items: center;
+                align-content: center;
+            }
+
+
         }
 
     }
@@ -902,9 +940,13 @@ a {
     }
 
     .Project {
+        flex-direction: column;
+        display: flex;
+
         .topFramedContent {
             min-height: 50vh;
             height: 50vh;
+            display: flex;
 
             .topImageContent {}
         }
@@ -917,6 +959,7 @@ a {
                 max-width: 95vw;
                 flex-direction: column;
                 margin-bottom: 2rem;
+                height: auto;
 
                 .introTexts {
                     width: 100%;
@@ -1129,7 +1172,5 @@ a {
         }
     }
 
-    .quickTag {
-        width: 100%;
-    }
+
 }
