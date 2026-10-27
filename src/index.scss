@@ -383,7 +383,7 @@ a {
         .introProject {
             display: flex;
             justify-content: center;
-            gap: 1rem;
+            gap: 1.5rem;
             width: 100%;
             max-width: 76%;
             height: 75vh;
@@ -627,6 +627,8 @@ a {
                 .galleryExplained {
                     display: flex;
                     color: $Main_White;
+                    height: 50vh;
+                    gap: 1rem;
 
                     .explainedText {
                         display: flex;
@@ -647,6 +649,13 @@ a {
 
                     .imageCont {
                         width: 100%;
+                        height: 100%;
+
+                        img {
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                        }
                     }
                 }
             }
@@ -694,12 +703,17 @@ a {
 .containerProjects {
     color: $Main_White;
     background-color: $backgroundBlack;
+    
 
 
     .textContainer {
         display: flex;
-        padding: 6rem 2rem 1rem 6rem;
-        border-bottom: 1px solid $OpacityBlack;
+        flex-direction: column;
+        gap: .5rem;
+        
+        padding: 4rem 2rem .5rem 6rem;
+        border-top: 4px solid white;
+      
     }
 
     .moreProjects::-webkit-scrollbar {
@@ -709,7 +723,7 @@ a {
     .moreProjects {
         display: flex;
         overflow-x: hidden;
-        padding: 2rem 6rem 6rem 6rem;
+        padding: 1rem 6rem 6rem 6rem;
 
         color: $Main_White;
         width: 100%;

@@ -10,20 +10,20 @@ export const projectsData = [
         textColor: "#FAFAFA",
         skills: ["Brand Design", "Final Art", "Web Design"],
         Year: ["2026"],
-        summary: "At its core, this is a board game that focuses on social dynamics and the intrigue surrounding them. The design of this project and its components is based on the rules established by the board game Secret Hitler a title that has gained immense popularity in the United States. Through a combination of colors, typefaces, and a geometric illustration style, we have developed a set of components that culminate in this new offering. Drawing inspiration from the political landscape of Spain during the 1936 elections—a time when various factions were gaining traction across the country—the design is influenced by the work of several poster artists and designers from that era",
-       
+        summary: "At its core, this is a board game that focuses on social dynamics and the intrigue surrounding them. The design of this project and its components is based on the rules established by the board game Secret Hitler a title that has gained immense popularity in the United States. Through a combination of colors, typefaces, and a geometric illustration style, we have developed a set of components that culminate in this new offering. \n \n Drawing inspiration from the political landscape of Spain during the 1936 elections—a time when various factions were gaining traction across the country—the design is influenced by the work of several poster artists and designers from that era. This project was developed as the thesis project for our bachelors degree.",
+
         objective: "Adapt an existing game to the Spanish language and history.",
         objectiveHalf: "One of the most commonly seen challenges in design history",
-       
+
         remark: "A Polished Product",
         remarkText: "With all of the pieces put together we started producing the different elements you can see down below. The first and most prominent one was a board game, or El Caudillo. We made over 40+ original illustrations, including characters, icons, symbols and other decorative elements. ",
-        
+
         takeaway1: "Learning from our history",
-        takeawayText1: "Of course all of this was then also applied to a selling point web, made on figma and prototyped for both desktop users and phone.They were made from scratchand geometric chapes",
+        takeawayText1: "This project was developed taking inspiration from designers, archives and museum collections from the Spanish Civil War. Ranging from the fonts selected to the style of illustrations used.",
         takeaway2: "Printing and colors",
-        takeawayText2: "Of  also applied to a selling point web, made on figma and prototyped for both desktop users and phone.They were made from scratchand geometric chapes",
+        takeawayText2: "The project was professionally produced, working together with a team of printers to select both the final CMYK colors as well as the papers and treatments it would be printed on.",
         takeaway3: "Icons and Ilustrations",
-        takeawayText3: "Of cxzczxczxxczxcourse all of this was then also applied to a selling point web, made on figma and prototyped for both desktop users and phone.They were made from scratchand geometric chapes",
+        takeawayText3: "Original icons and illustrations based on the culture of Spain and developed with a strict set of guidelines to keep consistency throughout.",
 
         videoPromo: "",
         videoProject: "/portfolio/projectImages/el-caudillo/Video2.mp4",
@@ -31,13 +31,14 @@ export const projectsData = [
         images: {
             topImage: "/portfolio/projectImages/el-caudillo/Image (2).webp",
             coverImage: "/portfolio/projectImages/el-caudillo/Image (1).webp",
-            grid1: "/portfolio/projectImages/el-caudillo/Image (25).webp",
-            grid2: "/portfolio/projectImages/el-caudillo/Image (19).webp",
-            grid3: "/portfolio/projectImages/el-caudillo/Image (21).webp",
+            grid1: "/portfolio/projectImages/el-caudillo/Image (2).webp",
+            grid2: "/portfolio/projectImages/el-caudillo/Image (3).webp",
+            grid3: "/portfolio/projectImages/el-caudillo/Image (4).webp",
             grid4: "/portfolio/projectImages/el-caudillo/Image (5).webp",
-            grid5: "/portfolio/projectImages/el-caudillo/Image (9).webp",
-            grid6: "/portfolio/projectImages/el-caudillo/Image (10).webp",
-            galleryCover: "/portfolio/projectImages/el-caudillo/Image (1).webp",
+            grid5: "/portfolio/projectImages/el-caudillo/Image (6).webp",
+            grid6: "/portfolio/projectImages/el-caudillo/Image (7).webp",
+            grid7: "/portfolio/projectImages/el-caudillo/Image (8).webp",
+            galleryCover: "/portfolio/projectImages/el-caudillo/Image (3).webp",
             gallery: [
                 "/portfolio/projectImages/el-caudillo/Image (1).webp",
                 "/portfolio/projectImages/el-caudillo/Image (2).webp",
@@ -59,12 +60,7 @@ export const projectsData = [
                 "/portfolio/projectImages/el-caudillo/Image (19).webp",
                 "/portfolio/projectImages/el-caudillo/Image (20).webp",
                 "/portfolio/projectImages/el-caudillo/Image (21).webp",
-                "/portfolio/projectImages/el-caudillo/Image (23).webp",
-                "/portfolio/projectImages/el-caudillo/Image (24).webp",
-                "/portfolio/projectImages/el-caudillo/Image (25).webp",
-                "/portfolio/projectImages/el-caudillo/Image (26).webp",
-
-
+                "/portfolio/projectImages/el-caudillo/Image (22).webp",
             ]
 
         }

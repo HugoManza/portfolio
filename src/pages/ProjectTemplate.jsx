@@ -105,7 +105,7 @@ const ProjectTemplate = () => {
                                     <h2>{project.remark}</h2>
                                     <p>{project.remarkText} </p>
                                 </div>
-                                <div className="imageCont"><img src={project.images.grid5} alt="" /></div>
+                                <div className="imageCont"><img src={project.images.grid7} alt="" /></div>
 
                             </div>
                         </div>
