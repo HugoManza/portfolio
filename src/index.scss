@@ -346,6 +346,7 @@ a {
         justify-content: center;
         display: flex;
         align-items: center;
+        -webkit-display: flex;
 
         .topImageContent {
 
@@ -399,7 +400,7 @@ a {
                     gap: 1.5rem;
 
                     .skills {
-                        padding: .25rem 1rem;
+                        padding: .25rem 1.25rem .125rem;
                         color: $Main_White;
                     }
                 }
@@ -897,7 +898,7 @@ a {
 
     .Project {
         .topFramedContent {
-            max-height: 50vh;
+            min-height: 50vh;
             height: 50vh;
 
             .topImageContent {}
