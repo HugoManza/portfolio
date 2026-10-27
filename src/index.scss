@@ -9,6 +9,7 @@
 //Color Variables
 $Main_Black: #101011;
 $Main_White: #fafafa;
+$Side_LightGray: #c4c4c4;
 $backgroundBlack: #141414;
 $Main_Accent: #ff2b2b;
 $OpacityBlack: rgba(10, 10, 11, 0.8);
@@ -135,7 +136,7 @@ a {
     }
 
     .logo {
-        color: $Main_White;
+        color: $Main_Black;
 
         &:hover {
             color: $Main_Accent
@@ -148,7 +149,7 @@ a {
 
         .navButton {
 
-            background-color: $Main_White;
+
             padding: 0rem 1.25rem;
             padding-top: .25rem;
             padding-top: 3px;
@@ -156,8 +157,8 @@ a {
             color: $Main_Black;
 
             &:hover {
-                color: $Main_White;
-                background-color: $Main_Accent;
+                color: $Main_Accent;
+
             }
 
             &:focus {
@@ -220,7 +221,7 @@ a {
                 height: 100%;
                 overflow: hidden;
                 position: relative;
-                border: 1px solid;
+                border: 2px solid $Side_LightGray;
                 box-sizing: border-box;
 
                 &:focus {
@@ -228,7 +229,7 @@ a {
                 }
 
                 &:hover {
-                    border: 1px $OpacityBlack solid
+                    border: 2px $backgroundBlack solid
                 }
 
                 .imageContainer {
@@ -341,12 +342,15 @@ a {
     .topFramedContent {
         width: 100%;
         height: 100vh;
-z-index: 1;
+        z-index: 1;
         border-radius: 0rem;
         justify-content: center;
         display: flex;
         align-items: center;
         -webkit-display: flex;
+
+        -webkit-transform: translate3d(0, 0, 0);
+        z-index: 999;
 
         .topImageContent {
 
@@ -382,17 +386,18 @@ z-index: 1;
             gap: 1rem;
             width: 100%;
             max-width: 76%;
-            min-height: fit-content;
-            height: 50vh;
+            height: 75vh;
+
+
+
             margin-bottom: 8rem;
-
-
 
             .introTexts {
                 width: 55%;
                 gap: 2rem;
                 display: flex;
                 flex-direction: column;
+                min-height: min-content;
 
 
                 .skillsFrame {
@@ -427,6 +432,7 @@ z-index: 1;
                 height: 100%;
                 width: 3rem;
                 width: 45%;
+
 
                 img {
                     width: 100%;
@@ -537,13 +543,12 @@ z-index: 1;
                                 min-width: 100%;
                                 display: flex;
                                 background-color: $Main_White;
-                                border-radius: 1.1rem;
                                 width: 100%;
 
                                 img {
                                     min-width: 100%;
                                     object-fit: cover;
-                                    border-radius: 0rem;
+
                                 }
 
                                 & :hover {
@@ -576,7 +581,7 @@ z-index: 1;
                         }
 
                         &:hover {
-                            color: $Main_Accent;
+                            color: $Side_LightGray;
 
                         }
 
@@ -686,17 +691,6 @@ z-index: 1;
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-
 .containerProjects {
     color: $Main_White;
     background-color: $backgroundBlack;
@@ -759,8 +753,6 @@ z-index: 1;
 
 }
 
-
-
 .logo {
     font-family: Josefin Sans;
     font-weight: 900;
@@ -772,7 +764,6 @@ z-index: 1;
 
 
 }
-
 
 .AboutMe {
 
@@ -932,7 +923,8 @@ z-index: 1;
 
                 .imageContainer {
                     width: 100%;
-                    height: 70vh;
+                    max-height: 70vh;
+
                 }
 
             }
@@ -1013,7 +1005,7 @@ z-index: 1;
                     max-width: 95%;
 
                     .imagesFramed {
-                        display: flex   ;
+                        display: flex;
                         flex-direction: column;
                         min-height: 60vh;
                         height: auto;

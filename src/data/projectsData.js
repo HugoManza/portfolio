@@ -29,7 +29,7 @@ export const projectsData = [
         videoProject: "/portfolio/projectImages/el-caudillo/Video2.mp4",
         gridImage: "/portfolio/projectImages/el-caudillo/CoverImage2.webp",
         images: {
-            topImage: "/portfolio/projectImages/el-caudillo/Image (10).webp",
+            topImage: "/portfolio/projectImages/el-caudillo/Image (2).webp",
             coverImage: "/portfolio/projectImages/el-caudillo/Image (1).webp",
             grid1: "/portfolio/projectImages/el-caudillo/Image (25).webp",
             grid2: "/portfolio/projectImages/el-caudillo/Image (19).webp",
