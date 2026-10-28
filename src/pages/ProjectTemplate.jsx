@@ -38,7 +38,7 @@ const ProjectTemplate = () => {
                     ) : (
                         // Si NO hay videoPromo (es vacío o null), renderiza la imagen
                         <img
-                            src={project.images.galleryCover}
+                            src={project.images.productTop}
                             alt={`${project.title} Cover`}
                             key={project.id}
                             className="topImageContent"
@@ -67,7 +67,7 @@ const ProjectTemplate = () => {
                             </div>
                         </div>
                         <div className="imageContainer">
-                            <img src={project.images.topImage} alt={project.title} />
+                            <img src={project.images.productImage} alt={project.title} />
 
                         </div>
 
@@ -112,7 +112,7 @@ const ProjectTemplate = () => {
                     </section>
 
                     <section className="takeaways" style={{
-                        backgroundImage: `url("${project.images.topImage}")`,
+                        backgroundImage: `url("${project.images.takeawayImage}")`,
                         backgroundSize: 'cover',
                         backgroundPosition: 'center'
                     }} >

@@ -19,7 +19,7 @@ $NoColor: rgba(253, 253, 253, 0);
 
 
 * {
-    border: 1px solid tomato;
+    border: 0px solid tomato;
 }
 
 html {}
@@ -119,6 +119,7 @@ a {
     align-self: center;
     top: 0;
     position: fixed;
+    align-items: center;
 
     border-radius: 0rem 0 1rem 1rem;
 
@@ -145,11 +146,12 @@ a {
 
     .nav {
         display: flex;
-
+        align-items: center;
 
         .navItems {
             gap: 1.5rem;
             display: flex;
+            align-items: center;
 
             .navButton {
 
@@ -188,7 +190,7 @@ a {
 
     .topSection {
         min-height: 100vh;
-        background-color: aqua;
+        background-color: wheat;
     }
 
     .Projects {
@@ -203,14 +205,14 @@ a {
             grid-template-areas:
                 "div1 div2"
                 "div1 div2"
-                "div1 div3"
+                "div1 div2"
                 "div1 div3"
                 "div1 div3"
                 "div4 div3"
                 "div4 div5"
                 "div4 div5"
                 "div6 div5"
-                "div6 div7"
+                "div6 div5"
                 "div6 div7"
                 "div6 div7";
 
@@ -251,13 +253,14 @@ a {
                 }
 
                 .textContainer {
+                    opacity: 0;
                     position: relative;
                     z-index: 2;
                     width: 100%;
                     padding: 3.5rem 4rem;
-                    //background-image: linear-gradient(to bottom, transparent, $Main_Black);
+                    background-image: linear-gradient(to bottom, transparent, $Main_Black);
 
-                    transition: opacity 5s ease-in-out;
+                    transition: opacity .5s ease-in-out;
                     display: flex;
                     flex-direction: column;
                 }
@@ -389,7 +392,7 @@ a {
             gap: 1.5rem;
             width: 100%;
             max-width: 76%;
-            height: 75vh;
+            height: min-content;
 
 
 
@@ -401,6 +404,7 @@ a {
                 display: flex;
                 flex-direction: column;
                 min-height: min-content;
+                
 
 
                 .skillsFrame {
@@ -431,14 +435,14 @@ a {
             }
 
             .imageContainer {
-
-                height: 100%;
-                width: 3rem;
+                display: flex;
+                
                 width: 45%;
 
 
                 img {
-                    width: 100%;
+                    display: block;
+                    max-width: 100%;
                     height: 100%;
                     object-fit: cover;
                 }
@@ -467,16 +471,22 @@ a {
 
             .objectives {
                 max-width: 76%;
+                width: 76%;
                 display: flex;
                 color: $Main_White;
                 align-items: center;
                 justify-content: space-between;
+                gap: 4rem;
 
                 .objContainer {
                     display: flex;
-                    width: 60%;
+                    width: min-content;
+                    min-width: 50%;
 
-                    .projectObjective {}
+                    .projectObjective {
+                        display: flex;
+                        width: 100%;
+                    }
                 }
 
 
@@ -973,7 +983,7 @@ a {
                         justify-content: space-between;
 
                         .skills {
-                            padding: 0 .25rem;
+                            padding: 0.125rem .25rem;
                         }
                     }
                 }
@@ -997,11 +1007,15 @@ a {
                     gap: 1rem;
                     width: 95%;
                     max-width: 100%;
+                    align-items: center;
+                    justify-content: center;
 
                     .objContainer {
                         width: 100%;
                         text-align: center;
                         max-width: 100%;
+                        align-items: center;
+                        justify-content: center;
                     }
 
                     .roundShape {
@@ -1010,8 +1024,11 @@ a {
                     }
 
                     .objectiveHalf {
-                        width: 90%;
+                        width: 100%;
                         max-width: 100%;
+                        align-items: center;
+                        justify-content: center;
+                        text-align: center;
                     }
                 }
 

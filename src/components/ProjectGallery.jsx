@@ -17,7 +17,7 @@ const ProjectGallery = () => {
         return <Navigate to="/" />
     }
 
-    const galleryFotos = project.images.gallery || [project.images.galleryCover];
+    const galleryFotos = project.images.gallery || [project.images.productTop];
     const length = galleryFotos.length;
 
     const extendedGallery = length > 1
