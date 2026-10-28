@@ -130,7 +130,8 @@ export const projectsData = [
             ]
 
         }
-    }, {
+    },
+    {
         id: "cesida",
         title: "CESIDA",
         subtitle: "An rebrand project for a National Brand",
@@ -205,17 +206,17 @@ export const projectsData = [
         remark: "Images ready to print",
         remarkText: "Like any respected designer, we had to find and prepare images that were high enough quality to print. This meant checking not only whether we were free to use them, but also their PPI. A crude lesson any designer has faced at least once in their career, but one that is already in my past.",
 
-        takeaway1: "User Accessibility",
-        takeawayText1: "We used sets of data from studies, as well as on-field research to determine how to best make our product accessible to our target audience.",
-        takeaway2: "Final Production",
-        takeawayText2: "We knew from the beginning this was to be produced and printed. Because of this, we worked together with a printing team to determine the final look.",
-        takeaway3: "Packaging design",
-        takeawayText3: "Making a box and utilizing the space to its fullest potential can be quite challenging. But we proved our excellence fitting descriptors and hooks to get our point across.",
+        takeaway1: "Letting lose",
+        takeawayText1: "As designers, we constantly live inside boxes and sometimes it's good to let our creative side break the rules. That's where this spontaneous and comic-like style came from.",
+        takeaway2: "Correct Image Formats",
+        takeawayText2: "Naming and image formats are part of the daily life os a designer. This project, and all the assets required demanded a consistent naming format, and made us check those TIFF images.",
+        takeaway3: "CMYK and color",
+        takeawayText3: "Learned the hard way that the colors on the screen are not what we get on the page. This was one of those projects where I had to experiment with inks like Pantone",
 
         videoPromo: "",
 
         //Grid Image is both the select and the more projects Image
-        gridImage: "/portfolio/projectImages/igor/CoverImage.webp",
+        gridImage: "/portfolio/projectImages/igor/Image (2).webp",
 
         images: {
 
@@ -243,6 +244,177 @@ export const projectsData = [
                 "/portfolio/projectImages/igor/Image (6).webp",
                 "/portfolio/projectImages/igor/Image (7).webp",
                 "/portfolio/projectImages/igor/Image (8).webp",
+
+            ]
+
+        }
+    },
+    {
+        id: "japan",
+        title: "A Taste of Japan",
+        subtitle: " A High Cuisine book series on the flavors of Japan ",
+        projectColor: "#eb2614",
+        skills: ["Prepress", "Production", "Final Art"],
+        Year: ["2024"],
+        summary: "Growing up, my mother always had these big fancy cooking books. Full of recipes and photos I could look at for hours. Steps, ingredients, lists, tables… a real challenge for any designer, and one that we took right on. \n \n It was quite hard to establish a style that really worked, especially because I wanted to respect the language, font and style the Japanese have. We landed in a very minimalist style that gave full attention to the ingredients, photographs and preparation. This left us with a really high end A4 collectors book, that anyone would love to have as a conversation piece, or to do some daily cooking. ",
+        objective: "Make a high end cuisine collection",
+        objectiveHalf: "Adapt the style so that a collection could be made and expanded upon",
+
+        remark: "A repetitive format",
+        remarkText: "A cooking book is what it is, and it has what it has. And so, one of the first problems we faced while pitching ideas was, how do I make it so it's not always the same. This was solved not only through the use of very detailed pictures, that make the reader stop and observe, but also a series of colors and sections that ended up not only guiding the reader, but also making it easier on the eye.",
+
+        takeaway1: "A big format",
+        takeawayText1: "Finding free use images is hard, especially when printing in formats that require them, such as A4 or A3. Lucky us, we solve hard problems with ease.",
+        takeaway2: "Prepress expert",
+        takeawayText2: "The reason I took this job was to test my InDesign capabilities. From multiple correctly named paragraph and character style, to tables, list and fonts. This project is what turned me into an expert.",
+        takeaway3: "Modular and Expandable",
+        takeawayText3: "The idea behind this system was that it had to work for a series of books, and so the style had to not be too closed off. ",
+
+        videoPromo: "",
+
+        //Grid Image is both the select and the more projects Image
+        gridImage: "/portfolio/projectImages/japan/Image (1).webp",
+
+        images: {
+
+            productTop: "/portfolio/projectImages/japan/Image (4).webp",
+
+            productImage: "/portfolio/projectImages/japan/Image (2).webp",
+
+            takeawayImage: "/portfolio/projectImages/japan/Image (5).webp",
+
+            grid1: "/portfolio/projectImages/japan/Image (1).webp",
+            grid2: "/portfolio/projectImages/japan/Image (2).webp",
+            grid3: "/portfolio/projectImages/japan/Image (4).webp",
+            grid4: "/portfolio/projectImages/japan/Image (3).webp",
+            grid5: "/portfolio/projectImages/japan/Image (5).webp",
+            grid6: "/portfolio/projectImages/japan/Image (6).webp",
+            grid7: "/portfolio/projectImages/japan/Image (7).webp",
+
+
+            gallery: [
+                "/portfolio/projectImages/japan/Image (1).webp",
+                "/portfolio/projectImages/japan/Image (2).webp",
+                "/portfolio/projectImages/japan/Image (3).webp",
+                "/portfolio/projectImages/japan/Image (4).webp",
+                "/portfolio/projectImages/japan/Image (5).webp",
+                "/portfolio/projectImages/japan/Image (6).webp",
+                "/portfolio/projectImages/japan/Image (7).webp",
+                "/portfolio/projectImages/japan/Image (8).webp",
+
+            ]
+
+        }
+    },
+    {
+        id: "web",
+        title: "This Website",
+        subtitle: "Find out how this portfolio was made",
+        projectColor: "#eb2614",
+        skills: ["Prepress", "Production", "Final Art"],
+        Year: ["2024"],
+        summary: "Growing up, my mother always had these big fancy cooking books. Full of recipes and photos I could look at for hours. Steps, ingredients, lists, tables… a real challenge for any designer, and one that we took right on. \n \n It was quite hard to establish a style that really worked, especially because I wanted to respect the language, font and style the Japanese have. We landed in a very minimalist style that gave full attention to the ingredients, photographs and preparation. This left us with a really high end A4 collectors book, that anyone would love to have as a conversation piece, or to do some daily cooking. ",
+        objective: "Make a high end cuisine collection",
+        objectiveHalf: "Adapt the style so that a collection could be made and expanded upon",
+
+        remark: "A repetitive format",
+        remarkText: "A cooking book is what it is, and it has what it has. And so, one of the first problems we faced while pitching ideas was, how do I make it so it's not always the same. This was solved not only through the use of very detailed pictures, that make the reader stop and observe, but also a series of colors and sections that ended up not only guiding the reader, but also making it easier on the eye.",
+
+        takeaway1: "A big format",
+        takeawayText1: "Finding free use images is hard, especially when printing in formats that require them, such as A4 or A3. Lucky us, we solve hard problems with ease.",
+        takeaway2: "Prepress expert",
+        takeawayText2: "The reason I took this job was to test my InDesign capabilities. From multiple correctly named paragraph and character style, to tables, list and fonts. This project is what turned me into an expert.",
+        takeaway3: "Modular and Expandable",
+        takeawayText3: "The idea behind this system was that it had to work for a series of books, and so the style had to not be too closed off. ",
+
+        videoPromo: "",
+
+        //Grid Image is both the select and the more projects Image
+        gridImage: "/portfolio/projectImages/japan/Image (1).webp",
+
+        images: {
+
+            productTop: "/portfolio/projectImages/japan/Image (4).webp",
+
+            productImage: "/portfolio/projectImages/japan/Image (2).webp",
+
+            takeawayImage: "/portfolio/projectImages/japan/Image (5).webp",
+
+            grid1: "/portfolio/projectImages/japan/Image (1).webp",
+            grid2: "/portfolio/projectImages/japan/Image (2).webp",
+            grid3: "/portfolio/projectImages/japan/Image (4).webp",
+            grid4: "/portfolio/projectImages/japan/Image (3).webp",
+            grid5: "/portfolio/projectImages/japan/Image (5).webp",
+            grid6: "/portfolio/projectImages/japan/Image (6).webp",
+            grid7: "/portfolio/projectImages/japan/Image (7).webp",
+
+
+            gallery: [
+                "/portfolio/projectImages/japan/Image (1).webp",
+                "/portfolio/projectImages/japan/Image (2).webp",
+                "/portfolio/projectImages/japan/Image (3).webp",
+                "/portfolio/projectImages/japan/Image (4).webp",
+                "/portfolio/projectImages/japan/Image (5).webp",
+                "/portfolio/projectImages/japan/Image (6).webp",
+                "/portfolio/projectImages/japan/Image (7).webp",
+                "/portfolio/projectImages/japan/Image (8).webp",
+
+            ]
+
+        }
+    },
+    {
+        id: "web-exchange",
+        title: "A Web for Exchange",
+        subtitle: "Fully prototyped in FIgma",
+        projectColor: "#eb2614",
+        skills: ["Prepress", "Production", "Final Art"],
+        Year: ["2024"],
+        summary: "Growing up, my mother always had these big fancy cooking books. Full of recipes and photos I could look at for hours. Steps, ingredients, lists, tables… a real challenge for any designer, and one that we took right on. \n \n It was quite hard to establish a style that really worked, especially because I wanted to respect the language, font and style the Japanese have. We landed in a very minimalist style that gave full attention to the ingredients, photographs and preparation. This left us with a really high end A4 collectors book, that anyone would love to have as a conversation piece, or to do some daily cooking. ",
+        objective: "Make a high end cuisine collection",
+        objectiveHalf: "Adapt the style so that a collection could be made and expanded upon",
+
+        remark: "A repetitive format",
+        remarkText: "A cooking book is what it is, and it has what it has. And so, one of the first problems we faced while pitching ideas was, how do I make it so it's not always the same. This was solved not only through the use of very detailed pictures, that make the reader stop and observe, but also a series of colors and sections that ended up not only guiding the reader, but also making it easier on the eye.",
+
+        takeaway1: "A big format",
+        takeawayText1: "Finding free use images is hard, especially when printing in formats that require them, such as A4 or A3. Lucky us, we solve hard problems with ease.",
+        takeaway2: "Prepress expert",
+        takeawayText2: "The reason I took this job was to test my InDesign capabilities. From multiple correctly named paragraph and character style, to tables, list and fonts. This project is what turned me into an expert.",
+        takeaway3: "Modular and Expandable",
+        takeawayText3: "The idea behind this system was that it had to work for a series of books, and so the style had to not be too closed off. ",
+
+        videoPromo: "",
+
+        //Grid Image is both the select and the more projects Image
+        gridImage: "/portfolio/projectImages/japan/Image (1).webp",
+
+        images: {
+
+            productTop: "/portfolio/projectImages/japan/Image (4).webp",
+
+            productImage: "/portfolio/projectImages/japan/Image (2).webp",
+
+            takeawayImage: "/portfolio/projectImages/japan/Image (5).webp",
+
+            grid1: "/portfolio/projectImages/japan/Image (1).webp",
+            grid2: "/portfolio/projectImages/japan/Image (2).webp",
+            grid3: "/portfolio/projectImages/japan/Image (4).webp",
+            grid4: "/portfolio/projectImages/japan/Image (3).webp",
+            grid5: "/portfolio/projectImages/japan/Image (5).webp",
+            grid6: "/portfolio/projectImages/japan/Image (6).webp",
+            grid7: "/portfolio/projectImages/japan/Image (7).webp",
+
+
+            gallery: [
+                "/portfolio/projectImages/japan/Image (1).webp",
+                "/portfolio/projectImages/japan/Image (2).webp",
+                "/portfolio/projectImages/japan/Image (3).webp",
+                "/portfolio/projectImages/japan/Image (4).webp",
+                "/portfolio/projectImages/japan/Image (5).webp",
+                "/portfolio/projectImages/japan/Image (6).webp",
+                "/portfolio/projectImages/japan/Image (7).webp",
+                "/portfolio/projectImages/japan/Image (8).webp",
 
             ]
 

@@ -88,16 +88,16 @@ const ProjectTemplate = () => {
 
                         <div className="galleryGrid">
                             <div className="imagesFramed">
-                                <div className="imageCont"><img src={project.images.grid1} alt="" /></div>
-                                <div className="imageCont"><img src={project.images.grid2} alt="" /></div>
+                                <a className="imageCont"><img src={project.images.grid1} alt="" /></a>
+                                <a className="imageCont"><img src={project.images.grid2} alt="" /></a>
                             </div>
                             <div className="imagesFramed">
-                                <div className="imageCont"><img src={project.images.grid3} alt="" /></div>
-                                <div className="imageCont"><img src={project.images.grid4} alt="" /></div>
+                                <a className="imageCont"><img src={project.images.grid3} alt="" /></a>
+                                <a className="imageCont"><img src={project.images.grid4} alt="" /></a>
                             </div>
                             <div className="imagesFramed">
-                                <div className="imageCont"><img src={project.images.grid5} alt="" /></div>
-                                <div className="imageCont"><img src={project.images.grid6} alt="" /></div>
+                                <a className="imageCont"><img src={project.images.grid5} alt="" /></a>
+                                <a className="imageCont"><img src={project.images.grid6} alt="" /></a>
                             </div>
 
                             <div className="galleryExplained">
@@ -105,7 +105,7 @@ const ProjectTemplate = () => {
                                     <h2>{project.remark}</h2>
                                     <p>{project.remarkText} </p>
                                 </div>
-                                <div className="imageCont"><img src={project.images.grid7} alt="" /></div>
+                                <a className="imageCont"><img src={project.images.grid7} alt="" /></a>
 
                             </div>
                         </div>
