@@ -8,8 +8,8 @@ const Footer = () => {
         <Link className="logo logoDesktop" to="/">HManzano</Link>
         <Link className='logo logoPhone' to="/">HM</Link>
         <div className="socialLinks">
-          <a href="https://www.linkedin.com/in/hugo-manzano-lara/">Linkedin</a>
-          <a href="">Instagram</a>
+          <a className='linkIcon' href="https://www.linkedin.com/in/hugo-manzano-lara/"><img src="\portfolio\public\extraResources\LinkedIn-Icon-Black-Logo.svg" alt="" />Linkedin</a>
+     
         </div>
 
       </div>

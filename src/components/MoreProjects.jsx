@@ -59,7 +59,8 @@ const MoreProjects = () => {
 
         <div className="containerProjects">
             <div className="textContainer">
-                <h3>More projects</h3>
+                <h3>All our best work</h3>
+                <h4>Here for you</h4>
             </div>
             
             <div
