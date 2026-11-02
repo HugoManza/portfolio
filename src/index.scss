@@ -157,6 +157,34 @@ a {
     }
 }
 
+@keyframes SlideFromTop {
+    0% {
+        opacity: 1;
+        transform: translateY(-100vh);
+        /* Starts slightly above */
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+        /* Rests at original position */
+    }
+}
+
+@keyframes SlideOutTop {
+    0% {
+        opacity: 1;
+        transform: translateY(100vh);
+
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+        /* Rests at original position */
+    }
+}
+
 .header {
     display: flex;
     padding: 2rem 3rem 1.5rem;
@@ -261,7 +289,7 @@ a {
 
             .textTop {
                 opacity: 100;
-               
+
             }
 
             .textBottom {
@@ -332,21 +360,24 @@ a {
                 height: 100%;
                 overflow: hidden;
                 position: relative;
-                border: 2px solid $Side_LightGray;
-                box-sizing: border-box;
 
+                box-sizing: border-box;
+                transition: all .1s ease-in;
+                border: .125rem $Side_LightGray solid;
 
                 //Animacion ajustes
                 opacity: 0;
-                                transform: translateY(2rem);
-              
+                transform: translateY(2rem);
+
 
                 &:focus {
                     border: .25rem $OpacityBlack solid;
                 }
 
                 &:hover {
-                    border: 2px $backgroundBlack solid
+
+                    border: .125rem $Main_Black solid;
+                    transition: all .1s ease-out;
                 }
 
                 .imageContainer {
@@ -367,7 +398,7 @@ a {
                     position: relative;
                     z-index: 2;
                     width: 100%;
-                    padding: 3.5rem 4rem;
+                    padding: 2.5rem 2rem;
                     background-image: linear-gradient(to bottom, transparent, $Main_Black);
 
                     transition: opacity .5s ease-in-out;
@@ -964,7 +995,7 @@ a {
     }
 
     h2 {
-        font-size: 1.75rem;
+        font-size: 2rem;
         line-height: 2rem;
     }
 
@@ -1033,22 +1064,48 @@ a {
 
             background-color: $Main_White;
             position: absolute;
-            top: 0;
-            left: 0;
-            padding-top: 4rem;
+            top: -100vh;
+            left: -1px;
+            padding-top: 1rem;
+            min-height: 100vh;
             height: 100vh;
             padding-right: 1rem;
             padding-left: 1rem;
+            animation: SlideOutTop 0.1s ease-in-out forwards;
+
+
+
+            .mobileMenu {
+                display: flex;
+                align-content: center;
+                width: 100%;
+                justify-content: right;
+                padding: 1rem 0;
+                padding-bottom: 1rem;
+
+
+            }
 
             .navButton {
-                height: 6rem;
+                height: 4rem;
                 justify-items: center;
                 align-content: center;
+                border-top: 1px solid $Side_LightGray;
+                border-bottom: 1px solid $Side_LightGray;
+
+
             }
+
+
 
 
         }
 
+        .open {
+            display: flex;
+            animation: SlideFromTop 0.2s ease-in-out forwards;
+            top: 0;
+        }
     }
 
     .footer {
@@ -1086,7 +1143,10 @@ a {
 
 
                     .textContainer {
-                        padding: .5rem;
+                        padding: 1.5rem 1rem;
+                        min-height: 30vh;
+                        align-content: end;
+                        justify-content: end;
                     }
                 }
             }

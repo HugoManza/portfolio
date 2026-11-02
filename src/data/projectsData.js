@@ -26,7 +26,7 @@ export const projectsData = [
 
         videoPromo: "",
 
-        gridImage: "/portfolio/projectImages/el-caudillo/CoverImage2.webp",
+        gridImage: "/portfolio/projectImages/el-caudillo/Image (3).webp",
         images: {
 
 
