@@ -11,11 +11,11 @@ export const projectsData = [
         Year: ["2026"],
         summary: "At its core, this is a board game that focuses on social dynamics and the intrigue surrounding them. The design of this project and its components is based on the rules established by the board game Secret Hitler a title that has gained immense popularity in the United States. Through a combination of colors, typefaces, and a geometric illustration style, we have developed a set of components that culminate in this new offering. \n \n Drawing inspiration from the political landscape of Spain during the 1936 elections—a time when various factions were gaining traction across the country—the design is influenced by the work of several poster artists and designers from that era. This project was developed as the thesis project for our bachelors degree.",
 
-        objective: "Adapt an existing game to the Spanish language and history.",
-        objectiveHalf: "One of the most commonly seen challenges in design history",
+        objective: "Adapt a game to the Spanish language and history.",
+        objectiveHalf: "A language and cultural challenge to adapt our product to a new audience based on research",
 
         remark: "A Polished Product",
-        remarkText: "With all of the pieces put together we started producing the different elements you can see down below. The first and most prominent one was a board game, or El Caudillo. We made over 40+ original illustrations, including characters, icons, symbols and other decorative elements. ",
+        remarkText: "With all of the pieces put together we started producing the different elements you can see here. We made over 40+ original illustrations, including characters, icons, symbols and other decorative elements. All these were made for both big format printing.",
 
         takeaway1: "Learning from our history",
         takeawayText1: "This project was developed taking inspiration from designers, archives and museum collections from the Spanish Civil War. Ranging from the fonts selected to the style of illustrations used.",
