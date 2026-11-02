@@ -1,16 +1,43 @@
-import React from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { projectsData } from '../data/projectsData'
 
 const ProjectSelect = () => {
+  const [isVisible, setIsVisible] = useState(false);
+  const sectionRef = useRef(null);
+
+  useEffect(() => {
+    // Detecta cuando el 10% de la sección entra en pantalla
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true);
+          observer.disconnect(); // Desconecta para que solo se anime la primera vez
+        }
+      },
+      { threshold: 0.1 } 
+    );
+
+    if (sectionRef.current) {
+      observer.observe(sectionRef.current);
+    }
+
+    return () => observer.disconnect();
+  }, []);
+
   return (
-    <main className='Projects'>
-      <div className="ProjectsFrame">
+    <main className='Projects' ref={sectionRef}>
+       <div className={`ProjectsFrame ${isVisible ? 'visible' : ''}`}>
+        
         {projectsData.map((project, index) => (
           <Link
             key={project.id}
             to={`/proyecto/${project.id}`}
             className={`ProjectClick div${index + 1}`}
+            style={{
+              // Multiplicamos el índice por 0.15s para crear el efecto cascada
+              animationDelay: `${index * 0.15}s` 
+            }}
           >
             <div className="imageContainer" style={{
               backgroundImage: `url("${project.gridImage}")`,
@@ -22,6 +49,7 @@ const ProjectSelect = () => {
             </div>
           </Link>
         ))}
+
       </div>
     </main>
   )
