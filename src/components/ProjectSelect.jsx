@@ -15,7 +15,7 @@ const ProjectSelect = () => {
           observer.disconnect(); // Desconecta para que solo se anime la primera vez
         }
       },
-      { threshold: 0.1 } 
+      { threshold: 0.05 } 
     );
 
     if (sectionRef.current) {
@@ -27,7 +27,8 @@ const ProjectSelect = () => {
 
   return (
     <main className='Projects' ref={sectionRef}>
-       <div className={`ProjectsFrame ${isVisible ? 'visible' : ''}`}>
+      {/* Añadimos la clase 'visible' cuando el usuario hace scroll hasta aquí */}
+      <div className={`ProjectsFrame ${isVisible ? 'visible' : ''}`}>
         
         {projectsData.map((project, index) => (
           <Link

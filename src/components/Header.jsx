@@ -53,7 +53,7 @@ const Head = () => {
           <Link to="/AboutMe" className='navButton hide' ><h5>About Me</h5></Link>
           <a className='navButton hide' href="#contact"><h5>Contact</h5></a>
         </div>
-        {/* Toggle Button */}
+       
         <button className='mobileMenu' onClick={toggleMenu}>
           <span className="material-symbols-outlined">
             {isMenuOpen ? 'close' : 'menu'}
@@ -61,8 +61,7 @@ const Head = () => {
         </button>
       </nav>
 
-      {/* Renders the mobile menu only when isMenuOpen is true */}
-      {isMenuOpen && (
+       {isMenuOpen && (
         <section className="menuPhone">
            <button className='mobileMenu' onClick={toggleMenu}>
           <span className="material-symbols-outlined">
