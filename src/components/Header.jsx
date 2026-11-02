@@ -49,9 +49,9 @@ const Head = () => {
 
       <nav className="nav">
         <div className="navItems">
-          <Link to="/Projects" className='navButton'><h5>Projects</h5></Link>
-          <Link to="/AboutMe" className='navButton' ><h5>About Me</h5></Link>
-          <a className='navButton' href="#contact"><h5>Contact</h5></a>
+          <Link to="/" className='navButton'><h5>Projects</h5></Link>
+          <Link to="/AboutMe" className='navButton hide' ><h5>About Me</h5></Link>
+          <a className='navButton hide' href="#contact"><h5>Contact</h5></a>
         </div>
         {/* Toggle Button */}
         <button className='mobileMenu' onClick={toggleMenu}>
