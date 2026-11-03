@@ -14,7 +14,7 @@ const TopFinal = () => {
                 </div>
 
                 <div className="imageCont">
-                    <img src="/extraResources/HugoFoto_Head.png" alt="" />
+                    <img src="./extraResources/HugoFoto_Head.png" alt="" />
                 </div>
             </div>
 
