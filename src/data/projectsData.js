@@ -192,6 +192,63 @@ export const projectsData = [
 
         }
     },
+     {
+        id: "ux-website",
+        title: "Exchange Website",
+        subtitle: " A High Cuisine book series on the flavors of Japan ",
+        projectColor: "#eb2614",
+        skills: ["Prepress", "Production", "Final Art"],
+        Year: ["2024"],
+        summary: "Growing up, my mother always had these big fancy cooking books. Full of recipes and photos I could look at for hours. Steps, ingredients, lists, tables… a real challenge for any designer, and one that we took right on. \n \n It was quite hard to establish a style that really worked, especially because I wanted to respect the language, font and style the Japanese have. We landed in a very minimalist style that gave full attention to the ingredients, photographs and preparation. This left us with a really high end A4 collectors book, that anyone would love to have as a conversation piece, or to do some daily cooking. ",
+        objective: "Make a high end cuisine collection",
+        objectiveHalf: "Adapt the style so that a collection could be made and expanded upon",
+
+        remark: "A repetitive format",
+        remarkText: "A cooking book is what it is, and it has what it has. And so, one of the first problems we faced while pitching ideas was, how do I make it so it's not always the same. This was solved not only through the use of very detailed pictures, that make the reader stop and observe, but also a series of colors and sections that ended up not only guiding the reader, but also making it easier on the eye.",
+
+        takeaway1: "A big format",
+        takeawayText1: "Finding free use images is hard, especially when printing in formats that require them, such as A4 or A3. Lucky us, we solve hard problems with ease.",
+        takeaway2: "Prepress expert",
+        takeawayText2: "The reason I took this job was to test my InDesign capabilities. From multiple correctly named paragraph and character style, to tables, list and fonts. This project is what turned me into an expert.",
+        takeaway3: "Modular and Expandable",
+        takeawayText3: "The idea behind this system was that it had to work for a series of books, and so the style had to not be too closed off. ",
+
+        videoPromo: "",
+
+        //Grid Image is both the select and the more projects Image
+        gridImage: "/portfolio/projectImages/japan/Image (1).webp",
+
+        images: {
+
+            productTop: "/portfolio/projectImages/japan/Image (4).webp",
+
+            productImage: "/portfolio/projectImages/japan/Image (2).webp",
+
+            takeawayImage: "/portfolio/projectImages/japan/Image (5).webp",
+
+            grid1: "/portfolio/projectImages/japan/Image (1).webp",
+            grid2: "/portfolio/projectImages/japan/Image (2).webp",
+            grid3: "/portfolio/projectImages/japan/Image (4).webp",
+            grid4: "/portfolio/projectImages/japan/Image (3).webp",
+            grid5: "/portfolio/projectImages/japan/Image (5).webp",
+            grid6: "/portfolio/projectImages/japan/Image (6).webp",
+            grid7: "/portfolio/projectImages/japan/Image (7).webp",
+
+
+            gallery: [
+                "/portfolio/projectImages/japan/Image (1).webp",
+                "/portfolio/projectImages/japan/Image (2).webp",
+                "/portfolio/projectImages/japan/Image (3).webp",
+                "/portfolio/projectImages/japan/Image (4).webp",
+                "/portfolio/projectImages/japan/Image (5).webp",
+                "/portfolio/projectImages/japan/Image (6).webp",
+                "/portfolio/projectImages/japan/Image (7).webp",
+                "/portfolio/projectImages/japan/Image (8).webp",
+
+            ]
+
+        }
+    },
     {
         id: "igor",
         title: "Igor Lyrical Booklet",

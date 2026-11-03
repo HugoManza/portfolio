@@ -7,7 +7,7 @@ const Footer = () => {
         <Link className="logo logoDesktop" to="/Projects">HManzano</Link>
         <Link className='logo logoPhone' to="/">HM</Link>
         <div className="socialLinks">
-          <a className='linkIcon' href="https://www.linkedin.com/in/hugo-manzano-lara/"><img src="/portfolio/public/extraResources/LinkedIn-Icon-Black-Logo.svg" alt="" />Linkedin</a>
+          <a className='linkIcon' href="https://www.linkedin.com/in/hugo-manzano-lara/"><img src="./extraResources/LinkedIn-Icon-Black-Logo.svg" alt="" />Linkedin</a>
      
         </div>
 
