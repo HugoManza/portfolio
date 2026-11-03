@@ -12,13 +12,15 @@ $Main_White: #fafafa;
 $Side_LightGray: #c4c4c4;
 $Side_DarkGray: #3e3e3e;
 $backgroundBlack: #141414;
-$Main_Accent: #ff2b2b;
+$Main_Accent: #0f2ad6;
 $OpacityBlack: rgba(10, 10, 11, 0.8);
 $OpacityWhite: rgba(4, 4, 4, 0.25);
 $NoColor: rgba(253, 253, 253, 0);
 
 
-
+.hide {
+    display: none;
+}
 * {
     border: 0px solid tomato;
 }
@@ -124,14 +126,12 @@ a {
     text-decoration: none;
 
     &:hover {
-        color: $Main_Accent ;
+        color: $Side_LightGray; ;
     }
 
 }
 
-.hide {
-    display: none;
-}
+
 
 @keyframes slideUpFade {
     0% {
@@ -187,7 +187,7 @@ a {
 
 .header {
     display: flex;
-    padding: 1.75rem 11.5rem 1.25rem;
+    padding: 1.5rem 11.5rem 1rem;
     justify-content: space-between;
     width: 100%;
     z-index: 100;
@@ -197,14 +197,10 @@ a {
     position: fixed;
     align-items: center;
 
-    
+
 
     /* From https://css.glass */
-    background: rgba(255, 255, 255, 0.2);
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    border: 0px; //solid rgba(255, 255, 255, 0.3);
+    background-color: $Main_White;
 
     .logoPhone {
         display: none;
@@ -231,6 +227,8 @@ a {
 
                 padding-top: 3px;
                 color: $Main_Black;
+                
+                align-items: center;
 
                 &:hover {
                     color: $Main_Accent;
@@ -239,6 +237,21 @@ a {
 
                 &:focus {
                     border: 1px $OpacityBlack solid;
+                }
+            }
+
+            .navContact {
+                padding: .5rem 1.5rem;
+               
+                color: $Main_White;
+                background-color: $Main_Black;
+                
+
+                &:hover {
+                    background-color: $Main_Accent;
+                    color: $Main_White;
+                    transition: all .2s ease-out;
+
                 }
             }
         }
@@ -264,64 +277,87 @@ a {
 
 
     .topSection {
-        color: $Main_White;
+        color: $Main_Black;
         display: flex;
-        flex-direction: column;
 
-        min-height: 97vh;
+        min-height: 100vh;
 
         padding-top: 4rem;
-        background-color: $Main_Black;
+        background-color: $Main_White;
         align-items: center;
         justify-content: center;
-        text-align: center;
 
 
-
-
-        .texts {
+        .centerFrame {
             display: flex;
-            flex-direction: column;
-            gap: 4rem;
-            margin-bottom: 4rem;
+            max-width: 76%;
+            gap: 2rem;
+
+            .leftFrame {
+                display: flex;
+                flex-direction: column;
+                gap: 4rem;
+                max-width: 50%;
+                width: 100%;
+
+                .textFrame {
+                    display: flex;
+                    flex-direction: column;
+                    gap: .5rem;
+                }
+
+                .ctaButton {
+                    display: flex;
+                    align-items: center;
+                    gap: 1rem;
+                    padding: .75rem 2rem;
+                    padding-left: .75rem;
+
+                    color: $Main_White;
+                    width: max-content;
+                    border: 1px $Main_Black solid;
+                    color: $Main_Black;
+ transition: all .2s ease-in;
+                    span {
+                        font-size: 1.75rem;
+                        font-weight: 200;
+                       
+
+                        height: 1.5rem;
+                        width: 1.5rem;
+                        align-items: center;
+                        justify-content: center;
+                        display: flex;
+                       
+                    }
+
+                    &:hover {
+                        background-color: $Main_Black;
+                        color: $Main_White;
+                        transition: all .2s ease-out;
+
+                    }
+                }
 
 
-            .textTop {
-                opacity: 100;
 
             }
 
-            .textBottom {
-                opacity: 0;
-                animation: Fade 3s ease-in-out forwards;
-                animation-delay: 1.2s;
+            .imageCont {
+                max-width: 50%;
+                width: 100%;
+
+                .img {
+                    object-fit: cover;
+                    width: 100%;
+                    height: 100%;
+                }
             }
+
+
         }
 
-        .bottomSect {
-            color: $Side_DarkGray;
-            display: flex;
-            justify-content: baseline;
-            align-items: baseline;
 
-
-
-
-            align-self: h5 {
-                font-size: 1.25rem;
-                font-weight: 400;
-                color: $Main_White;
-            }
-        }
-
-        .degradado {
-            position: absolute;
-            bottom: 0;
-
-            width: 100%;
-            height: 0vh;
-            background: linear-gradient(to bottom, transparent, $Main_White);
-        }
     }
 
     .Projects {
@@ -329,12 +365,12 @@ a {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             grid-template-rows: repeat(12, 1fr);
-            grid-column-gap: 1rem;
-            grid-row-gap: 1rem;
+            grid-column-gap: 2rem;
+            grid-row-gap: 2rem;
             width: 76%;
-align-self: center;
-justify-self: center;
-            padding: 4rem 0rem 4rem 0rem;
+            align-self: center;
+            justify-self: center;
+            padding: 8rem 0rem 12rem 0rem;
             grid-template-areas:
                 "div1 div2"
                 "div1 div2"
@@ -364,7 +400,7 @@ justify-self: center;
 
                 box-sizing: border-box;
                 transition: all .1s ease-in;
-                border: .125rem $Side_LightGray solid;
+                border: 1px $Side_LightGray solid;
 
                 //Animacion ajustes
                 opacity: 0;
@@ -372,12 +408,12 @@ justify-self: center;
 
 
                 &:focus {
-                    border: .25rem $OpacityBlack solid;
+                    border: 1px $Main_Black solid;
                 }
 
                 &:hover {
 
-                    border: .125rem $Main_Black solid;
+                    border: 1px $Main_Black solid;
                     transition: all .1s ease-out;
                 }
 
@@ -522,7 +558,7 @@ justify-self: center;
     .topFramedContent {
         width: 100%;
         height: 100vh;
-
+padding-top: 6rem;
 
         justify-content: center;
         display: flex;
@@ -886,6 +922,8 @@ justify-self: center;
     }
 }
 
+
+//More PRojects section
 .containerProjects {
     color: $Main_White;
     background-color: $backgroundBlack;
@@ -918,6 +956,7 @@ justify-self: center;
         cursor: grab;
         scrollbar-width: none;
         -ms-overflow-style: none;
+       
 
 
         .active {
@@ -940,11 +979,23 @@ justify-self: center;
             -webkit-user-drag: none;
             text-decoration: none;
 
+ border: 1px solid $backgroundBlack;
+
+        &:hover {
+            border: 1px solid $Side_LightGray;
+        }
+
             .projectMoreTexts {
                 width: 100%;
                 padding: 2rem;
                 background: linear-gradient(to top, $Main_Black, transparent);
+
+              
             }
+
+              &:hover {
+                    color:$Main_White;
+                }
 
         }
     }
@@ -954,10 +1005,11 @@ justify-self: center;
 }
 
 .logo {
-    font-family: Josefin Sans;
-    font-weight: 900;
+    font-family: Outfit;
+    font-weight: 700;
 
-    font-size: 2.5rem;
+    font-size: 2rem;
+    line-height: 90%;
     color: $Main_White;
     align-content: center;
     text-decoration: none;
@@ -1029,7 +1081,7 @@ justify-self: center;
         width: 100%;
         border-radius: 0;
         align-items: center;
-      
+
 
         .logoDesktop {
             display: none;
@@ -1133,6 +1185,36 @@ justify-self: center;
     }
 
     .container {
+
+        .topSection {
+            
+            .centerFrame {
+                flex-direction: column;
+                gap: 2rem;
+                max-width: 95%;
+
+                .leftFrame {
+                    max-width: 100%;
+                    width: 100%;
+                    gap: 2rem;
+
+                    .textFrame {
+                        width: 100%;
+                        gap: 1rem;
+                    }
+
+                    .ctaButton {
+                        width: 100%;
+                        justify-content: center;
+                    }
+                }
+
+                .imageCont {
+                    display: none;
+                }
+            }
+        }
+
         .Projects {
 
             .ProjectsFrame {
@@ -1402,3 +1484,5 @@ justify-self: center;
 
 
 }
+
+

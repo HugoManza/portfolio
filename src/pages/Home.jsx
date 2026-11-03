@@ -4,12 +4,12 @@ import Footer from '../components/Footer'
 import { Link } from 'react-router-dom'
 import { projectsData } from '../data/projectsData'
 import ProjectSelect from '../components/ProjectSelect'
-import TemporaryTop from '../components/TemporaryTop'
+import TopFinal from '../components/TopFinal'
 const App = () => {
   return (
     <div className="container">
       <Header />
-      <TemporaryTop />
+      <TopFinal />
 
       <ProjectSelect />
 

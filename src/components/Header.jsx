@@ -25,7 +25,7 @@ const Head = () => {
     return () => window.removeEventListener('scroll', handleScroll)
   }, [lastScrollY])
 
-// Añade este useEffect justo debajo del que ya tienes
+  // Añade este useEffect justo debajo del que ya tienes
   useEffect(() => {
     if (isMenuOpen) {
       // Bloquea el scroll
@@ -47,7 +47,7 @@ const Head = () => {
         position: 'fixed',
         top: 0,
         transition: 'transform 0.3s ease-in-out',
-         transform: (isVisible || isMenuOpen) ? 'translateY(0)' : 'translateY(-100%)',
+        transform: (isVisible || isMenuOpen) ? 'translateY(0)' : 'translateY(-100%)',
         zIndex: 1000
       }}
     >
@@ -55,14 +55,14 @@ const Head = () => {
       <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=chevron_right,chevron_left,menu,close" />
 
 
-      <Link className="logo logoDesktop" to="/">HManzano</Link>
+      <Link className="logo logoDesktop" to="/">Hugo <br /> Manzano</Link>
       <Link className='logo logoPhone' to="/">HM</Link>
 
-     <nav className="nav">
+      <nav className="nav">
         <div className="navItems">
-          <Link to="/Projects" className='navButton'><h5>Projects</h5></Link>
-          <Link to="/AboutMe" className='navButton hide' ><h5>About Me</h5></Link>
-          <a className='navButton hide' href="#contact"><h5>Contact</h5></a>
+          <Link to="/Projects" className="navButton"><h5>Projects</h5></Link>
+          <Link to="/AboutMe" className="hide navButton " ><h5>About Me</h5></Link>
+           <a href="https://www.linkedin.com/in/hugo-manzano-lara/" className="navContact navButton  "><h5>Contact Me</h5  ></a>
         </div>
 
         <button className='mobileMenu' onClick={toggleMenu}>
@@ -72,7 +72,7 @@ const Head = () => {
         </button>
       </nav>
 
-    
+
       <section className={`menuPhone ${isMenuOpen ? 'open' : ''}`}>
         <button className='mobileMenu' onClick={toggleMenu}>
           <span className="material-symbols-outlined">close</span>
@@ -80,6 +80,8 @@ const Head = () => {
         <Link to="/Projects" className='navButton' onClick={toggleMenu}><h5>Projects</h5></Link>
         <Link to="/AboutMe" className='navButton hide' onClick={toggleMenu}><h5>About Me</h5></Link>
         <a className='navButton hide' href="#contact" onClick={toggleMenu}><h5>Contact</h5></a>
+      <a href="https://www.linkedin.com/in/hugo-manzano-lara/" className="navContact navButton  "><h5>Contact Me</h5  ></a>
+       
       </section>
     </header>
   )
