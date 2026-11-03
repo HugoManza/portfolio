@@ -37,7 +37,7 @@ body {
 
 h1 {
     font-family: josefin sans;
-    font-size: 6rem;
+    font-size: 5rem;
     line-height: normal;
     text-decoration: none;
     font-weight: 900;
@@ -270,6 +270,7 @@ a {
 
         min-height: 97vh;
 
+        padding-top: 4rem;
         background-color: $Main_Black;
         align-items: center;
         justify-content: center;
