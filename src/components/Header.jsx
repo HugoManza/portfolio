@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
+import LogoDesk from './LogoDesk'
 
 const Head = () => {
   const [isVisible, setIsVisible] = useState(true)
@@ -55,7 +56,7 @@ const Head = () => {
       <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=chevron_right,chevron_left,menu,close" />
 
 
-      <Link className="logo logoDesktop" to="/">Hugo <br /> Manzano</Link>
+      <LogoDesk />
       <Link className='logo logoPhone' to="/">HM</Link>
 
       <nav className="nav">

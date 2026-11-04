@@ -196,10 +196,6 @@ a {
     top: 0;
     position: fixed;
     align-items: center;
-
-
-
-    /* From https://css.glass */
     background-color: $Main_White;
 
     .logoPhone {
@@ -245,7 +241,7 @@ a {
                
                 color: $Main_White;
                 background-color: $Main_Black;
-                
+                 transition: all .2s ease-out;
 
                 &:hover {
                     background-color: $Main_Accent;
@@ -512,8 +508,8 @@ a {
     .footerFrame {
         display: flex;
         justify-content: space-between;
-        padding: 4rem 0;
-        width: 90%;
+        padding: 4rem 6rem;
+        width: 100%;
         justify-self: center;
         border-top: 1px solid $OpacityBlack;
 
@@ -1247,6 +1243,7 @@ padding-top: 6rem;
             min-height: 50vh;
             height: 78vh;
             display: flex;
+            padding-top: 4rem;
 
             .topImageContent {}
         }
