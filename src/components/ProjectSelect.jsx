@@ -15,7 +15,7 @@ const ProjectSelect = () => {
           observer.disconnect(); // Desconecta para que solo se anime la primera vez
         }
       },
-      { threshold: 0.05 } 
+      { threshold: 0.05 }
     );
 
     if (sectionRef.current) {
@@ -27,9 +27,9 @@ const ProjectSelect = () => {
 
   return (
     <main className='Projects' ref={sectionRef}>
-      {/* Añadimos la clase 'visible' cuando el usuario hace scroll hasta aquí */}
+      <div className="topText"><h2>Projects</h2> <h4>Explore all of our work</h4></div>
       <div className={`ProjectsFrame ${isVisible ? 'visible' : ''}`}>
-        
+
         {projectsData.map((project, index) => (
           <Link
             key={project.id}
@@ -37,7 +37,7 @@ const ProjectSelect = () => {
             className={`ProjectClick div${index + 1}`}
             style={{
               // Multiplicamos el índice por 0.15s para crear el efecto cascada
-              animationDelay: `${index * 0.15}s` 
+              animationDelay: `${index * 0.15}s`
             }}
           >
             <div className="imageContainer" style={{

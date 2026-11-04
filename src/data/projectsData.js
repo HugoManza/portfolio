@@ -132,6 +132,63 @@ export const projectsData = [
         }
     },
     {
+        id: "ux-website",
+        title: "Exchange Website",
+        subtitle: "A UX/ UI project fully functional in Figma",
+        projectColor: "#1beb14",
+        skills: ["UX / UI", "Web Design", "Prototyping"],
+        Year: ["2025"],
+        summary: "A project dedicated entirely to user-centered design. Our job was to make a working mid-fi to run user tests on, with which we would fix the friction points that came up. The goal was to make an item exchange website for our university, and test it with different students. We used a lot of different methods to get to these results, from user-persona tests, to different journey maps the users would have to take. \n \n This was a team project, so we worked together to come up with the different screens and how we perceived users would interact based on the different goals we had in mind. We slowly buffed out any of the pain or friction points we found, to make it as intuitive for users as possible.",
+        objective: "Make a working prototype for user testing",
+        objectiveHalf: "Understanding the user and their needs to make a working product",
+
+        remark: "A functional prototype",
+        remarkText: "The key for this project was the entire figma file. We needed to make a series of reusable components that were able to be edited at any point, to make sections like the navbar or buttons. All of the design first came from a series of low-fis which we worked up to the version we can see here, making small adjustments to account for any challenges we saw came up.",
+
+        takeaway1: "Prototyping in Figma",
+        takeawayText1: "All the components and buttons had to be linked between them on the final prototype. We tediously went through them all to assure a perfect final product.",
+        takeaway2: "User Testing",
+        takeawayText2: "Testing users was quite a challenge, as we gave them a goal and had them analyze how easy it was for them to navigate the web.",
+        takeaway3: "Extracting conclusions",
+        takeawayText3: "The final step was to draw conclusions and make tweaks where needed, after all, the data we collect is useless unless we put it to work.",
+
+        videoPromo: "",
+
+        //Grid Image is both the select and the more projects Image
+        gridImage: "/portfolio/projectImages/exchange/Image (1).webp",
+
+        images: {
+
+            productTop: "/portfolio/projectImages/exchange/Image (4).webp",
+
+            productImage: "/portfolio/projectImages/exchange/Image (2).webp",
+
+            takeawayImage: "/portfolio/projectImages/exchange/Image (7).webp",
+
+            grid1: "/portfolio/projectImages/exchange/Image (1).webp",
+            grid2: "/portfolio/projectImages/exchange/Image (2).webp",
+            grid3: "/portfolio/projectImages/exchange/Image (4).webp",
+            grid4: "/portfolio/projectImages/exchange/Image (3).webp",
+            grid5: "/portfolio/projectImages/exchange/Image (5).webp",
+            grid6: "/portfolio/projectImages/exchange/Image (6).webp",
+            grid7: "/portfolio/projectImages/exchange/Image (7).webp",
+
+
+            gallery: [
+                "/portfolio/projectImages/exchange/Image (1).webp",
+                "/portfolio/projectImages/exchange/Image (2).webp",
+                "/portfolio/projectImages/exchange/Image (3).webp",
+                "/portfolio/projectImages/exchange/Image (4).webp",
+                "/portfolio/projectImages/exchange/Image (5).webp",
+                "/portfolio/projectImages/exchange/Image (6).webp",
+                "/portfolio/projectImages/exchange/Image (7).webp",
+                "/portfolio/projectImages/exchange/Image (8).webp",
+
+            ]
+
+        }
+    },
+    {
         id: "cesida",
         title: "CESIDA",
         subtitle: "An rebrand project for a National Brand",
@@ -192,63 +249,7 @@ export const projectsData = [
 
         }
     },
-     {
-        id: "ux-website",
-        title: "Exchange Website",
-        subtitle: "A UX/ UI project for item exchange inside a community",
-        projectColor: "#1beb14",
-        skills: ["UX / UI", "Web Design", "Prototyping"],
-        Year: ["2025"],
-        summary: "A project dedicated entirely to user-centered design. Our job was to make a working mid-fi to run user tests on, with which we would fix the friction points that came up. The goal was to make an item exchange website for our university, and test it with different students. We used a lot of different methods to get to these results, from user-persona tests, to different journey maps the users would have to take. \n \n This was a team project, so we worked together to come up with the different screens and how we perceived users would interact based on the different goals we had in mind. We slowly buffed out any of the pain or friction points we found, to make it as intuitive for users as possible.",
-        objective: "Make a working prototype for user testing",
-        objectiveHalf: "Understanding the user and their needs to make a working product",
 
-        remark: "A functional prototype",
-        remarkText: "The key for this project was the entire figma file. We needed to make a series of reusable components that were able to be edited at any point, to make sections like the navbar or buttons. All of the design first came from a series of low-fis which we worked up to the version we can see here, making small adjustments to account for any challenges we saw came up.",
-
-        takeaway1: "Prototyping in Figma",
-        takeawayText1: "All the components and buttons had to be linked between them on the final prototype. We tediously went through them all to assure a perfect final product.",
-        takeaway2: "User Testing",
-        takeawayText2: "Testing users was quite a challenge, as we gave them a goal and had them analyze how easy it was for them to navigate the web.",
-        takeaway3: "Extracting conclusions",
-        takeawayText3: "The final step was to draw conclusions and make tweaks where needed, after all, the data we collect is useless unless we put it to work.",
-
-        videoPromo: "",
-
-        //Grid Image is both the select and the more projects Image
-        gridImage: "/portfolio/projectImages/exchange/Image (1).webp",
-
-        images: {
-
-            productTop: "/portfolio/projectImages/exchange/Image (4).webp",
-
-            productImage: "/portfolio/projectImages/exchange/Image (2).webp",
-
-            takeawayImage: "/portfolio/projectImages/exchange/Image (7).webp",
-
-            grid1: "/portfolio/projectImages/exchange/Image (1).webp",
-            grid2: "/portfolio/projectImages/exchange/Image (2).webp",
-            grid3: "/portfolio/projectImages/exchange/Image (4).webp",
-            grid4: "/portfolio/projectImages/exchange/Image (3).webp",
-            grid5: "/portfolio/projectImages/exchange/Image (5).webp",
-            grid6: "/portfolio/projectImages/exchange/Image (6).webp",
-            grid7: "/portfolio/projectImages/exchange/Image (7).webp",
-
-
-            gallery: [
-                "/portfolio/projectImages/exchange/Image (1).webp",
-                "/portfolio/projectImages/exchange/Image (2).webp",
-                "/portfolio/projectImages/exchange/Image (3).webp",
-                "/portfolio/projectImages/exchange/Image (4).webp",
-                "/portfolio/projectImages/exchange/Image (5).webp",
-                "/portfolio/projectImages/exchange/Image (6).webp",
-                "/portfolio/projectImages/exchange/Image (7).webp",
-                "/portfolio/projectImages/exchange/Image (8).webp",
-
-            ]
-
-        }
-    },
     {
         id: "igor",
         title: "Igor Lyrical Booklet",
@@ -306,7 +307,7 @@ export const projectsData = [
 
         }
     },
-     {
+    {
         id: "web",
         title: "This Website",
         subtitle: "Find out how this portfolio was made",
@@ -420,7 +421,7 @@ export const projectsData = [
 
         }
     },
-   
-   
+
+
 
 ] 

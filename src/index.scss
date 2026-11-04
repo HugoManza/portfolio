@@ -12,7 +12,7 @@ $Main_White: #fafafa;
 $Side_LightGray: #c4c4c4;
 $Side_DarkGray: #3e3e3e;
 $backgroundBlack: #141414;
-$Main_Accent: #0f2ad6;
+$Main_Accent: #011dd1;
 $OpacityBlack: rgba(10, 10, 11, 0.8);
 $OpacityWhite: rgba(4, 4, 4, 0.25);
 $NoColor: rgba(253, 253, 253, 0);
@@ -21,6 +21,7 @@ $NoColor: rgba(253, 253, 253, 0);
 .hide {
     display: none;
 }
+
 * {
     border: 0px solid tomato;
 }
@@ -126,7 +127,8 @@ a {
     text-decoration: none;
 
     &:hover {
-        color: $Side_LightGray; ;
+        color: $Side_LightGray;
+        ;
     }
 
 }
@@ -187,7 +189,7 @@ a {
 
 .header {
     display: flex;
-    padding: 1.5rem 11.5rem 1rem;
+    padding: 1.5rem 0 1rem;
     justify-content: space-between;
     width: 100%;
     z-index: 100;
@@ -198,68 +200,77 @@ a {
     align-items: center;
     background-color: $Main_White;
 
-    .logoPhone {
-        display: none;
-    }
-
-    .logo {
-        color: $Main_Black;
-
-        &:hover {
-            color: $Main_Accent
-        }
-    }
-
-    .nav {
+    .headerFrame {
         display: flex;
+        width: 76%;
         align-items: center;
+        justify-content: space-between;
+        margin: 0 auto;
 
-        .navItems {
-            gap: 1.5rem;
+
+        .logoPhone {
+            display: none;
+        }
+
+        .logo {
+            color: $Main_Black;
+
+            &:hover {
+                color: $Main_Accent
+            }
+        }
+
+        .nav {
             display: flex;
             align-items: center;
 
-            .navButton {
-
-                padding-top: 3px;
-                color: $Main_Black;
-                
+            .navItems {
+                gap: 1.5rem;
+                display: flex;
                 align-items: center;
 
-                &:hover {
-                    color: $Main_Accent;
-                    text-decoration: underline;
+                .navButton {
+
+                    padding-top: 3px;
+                    color: $Main_Black;
+
+                    align-items: center;
+
+                    &:hover {
+                        color: $Main_Accent;
+                        text-decoration: underline;
+                    }
+
+                    &:focus {
+                        border: 1px $OpacityBlack solid;
+                    }
                 }
 
-                &:focus {
-                    border: 1px $OpacityBlack solid;
-                }
-            }
+                .navContact {
+                    padding: .5rem 1.5rem;
 
-            .navContact {
-                padding: .5rem 1.5rem;
-               
-                color: $Main_White;
-                background-color: $Main_Black;
-                 transition: all .2s ease-out;
-
-                &:hover {
-                    background-color: $Main_Accent;
                     color: $Main_White;
+                    background-color: $backgroundBlack;
                     transition: all .2s ease-out;
 
+                    &:hover {
+                        background-color: $Main_Accent;
+                        color: $Main_White;
+                        transition: all .2s ease-out;
+
+                    }
                 }
+            }
+
+
+            .mobileMenu {
+                display: none;
             }
         }
 
-
-        .mobileMenu {
+        .menuPhone {
             display: none;
         }
-    }
-
-    .menuPhone {
-        display: none;
     }
 }
 
@@ -275,14 +286,14 @@ a {
     .topSection {
         color: $Main_Black;
         display: flex;
-
         min-height: 100vh;
-
         padding-top: 4rem;
         background-color: $Main_White;
         align-items: center;
         justify-content: center;
-
+        top: 0;
+        z-index: 0;
+        position: sticky;
 
         .centerFrame {
             display: flex;
@@ -313,18 +324,19 @@ a {
                     width: max-content;
                     border: 1px $Main_Black solid;
                     color: $Main_Black;
- transition: all .2s ease-in;
+                    transition: all .2s ease-in;
+
                     span {
                         font-size: 1.75rem;
                         font-weight: 200;
-                       
+
 
                         height: 1.5rem;
                         width: 1.5rem;
                         align-items: center;
                         justify-content: center;
                         display: flex;
-                       
+
                     }
 
                     &:hover {
@@ -352,12 +364,28 @@ a {
 
 
         }
-
-
     }
 
     .Projects {
+        z-index: 1;
+        position: relative;
+        background-color: $Main_White;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        padding-top: 4rem;
+
+        .topText {
+            width: 76%;
+            display: flex;
+            flex-direction: column;
+            align-self: center;
+            justify-self: center;
+            gap: 1rem;
+        }
+
         .ProjectsFrame {
+
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             grid-template-rows: repeat(12, 1fr);
@@ -366,7 +394,8 @@ a {
             width: 76%;
             align-self: center;
             justify-self: center;
-            padding: 8rem 0rem 12rem 0rem;
+
+            padding: 2rem 0rem 12rem 0rem;
             grid-template-areas:
                 "div1 div2"
                 "div1 div2"
@@ -456,7 +485,6 @@ a {
 
         }
 
-
         //ANIMACION DE ARRIBA PROYECTOS
         .ProjectsFrame.visible .ProjectClick {
             /* La duración es 0.6s, el retraso (delay) lo pone React automáticamente en línea */
@@ -504,14 +532,17 @@ a {
 
 .footer {
     background-color: $backgroundBlack;
+    z-index: 1000;
 
     .footerFrame {
         display: flex;
+        
         justify-content: space-between;
         padding: 4rem 6rem;
         width: 100%;
         justify-self: center;
         border-top: 1px solid $OpacityBlack;
+        
 
         .logo {}
 
@@ -554,7 +585,7 @@ a {
     .topFramedContent {
         width: 100%;
         height: 100vh;
-padding-top: 6rem;
+        padding-top: 6rem;
 
         justify-content: center;
         display: flex;
@@ -952,7 +983,7 @@ padding-top: 6rem;
         cursor: grab;
         scrollbar-width: none;
         -ms-overflow-style: none;
-       
+
 
 
         .active {
@@ -975,23 +1006,23 @@ padding-top: 6rem;
             -webkit-user-drag: none;
             text-decoration: none;
 
- border: 1px solid $backgroundBlack;
+            border: 1px solid $backgroundBlack;
 
-        &:hover {
-            border: 1px solid $Side_LightGray;
-        }
+            &:hover {
+                border: 1px solid $Side_LightGray;
+            }
 
             .projectMoreTexts {
                 width: 100%;
                 padding: 2rem;
                 background: linear-gradient(to top, $Main_Black, transparent);
 
-              
+
             }
 
-              &:hover {
-                    color:$Main_White;
-                }
+            &:hover {
+                color: $Main_White;
+            }
 
         }
     }
@@ -1073,89 +1104,93 @@ padding-top: 6rem;
 
 
     .header {
-        padding: 1rem 1rem;
+        padding: 1rem .75rem;
         width: 100%;
         border-radius: 0;
         align-items: center;
 
+        .headerFrame {
+width: 100%;
 
-        .logoDesktop {
-            display: none;
-        }
 
-        .logoPhone {
-            display: flex;
-        }
-
-        .logo {
-            font-size: rem;
-        }
-
-        .nav {
-            align-items: center;
-
-            .navItems {
+            .logoDesktop {
                 display: none;
+            }
 
-                .navButton {
-                    font-size: .75rem;
-                    padding: 0 0.25rem;
+            .logoPhone {
+                display: flex;
+            }
+
+            .logo {
+                font-size: rem;
+            }
+
+            .nav {
+                align-items: center;
+
+                .navItems {
+                    display: none;
+
+                    .navButton {
+                        font-size: .75rem;
+                        padding: 0 0.25rem;
+                    }
+                }
+
+                .mobileMenu {
+                    display: flex;
                 }
             }
 
-            .mobileMenu {
+            .menuPhone {
                 display: flex;
+                flex-direction: column;
+                width: 100vw;
+
+                background-color: $Main_White;
+                position: absolute;
+                top: -100vh;
+                left: -.1px;
+                padding-top: 1rem;
+                min-height: 100vh;
+                height: 100vh;
+                padding-right: 1rem;
+                padding-left: 1rem;
+                animation: SlideOutTop 0.1s ease-in-out forwards;
+
+
+
+                .mobileMenu {
+                    display: flex;
+                    align-content: center;
+                    width: 100%;
+                    justify-content: right;
+                    padding: 1rem 0;
+                    padding-bottom: 1rem;
+
+
+                }
+
+                .navButton {
+                    height: 4rem;
+                    justify-items: center;
+                    align-content: center;
+                    border-top: 1px solid $Side_LightGray;
+                    border-bottom: 1px solid $Side_LightGray;
+
+
+                }
+
+
+
+
             }
-        }
 
-        .menuPhone {
-            display: flex;
-            flex-direction: column;
-            width: 100vw;
-
-            background-color: $Main_White;
-            position: absolute;
-            top: -100vh;
-            left: -.1px;
-            padding-top: 1rem;
-            min-height: 100vh;
-            height: 100vh;
-            padding-right: 1rem;
-            padding-left: 1rem;
-            animation: SlideOutTop 0.1s ease-in-out forwards;
-
-
-
-            .mobileMenu {
+            .open {
                 display: flex;
-                align-content: center;
-                width: 100%;
-                justify-content: right;
-                padding: 1rem 0;
-                padding-bottom: 1rem;
-
-
+                animation: SlideFromTop 0.2s ease-in-out forwards;
+                top: 0;
             }
-
-            .navButton {
-                height: 4rem;
-                justify-items: center;
-                align-content: center;
-                border-top: 1px solid $Side_LightGray;
-                border-bottom: 1px solid $Side_LightGray;
-
-
-            }
-
-
-
-
-        }
-
-        .open {
-            display: flex;
-            animation: SlideFromTop 0.2s ease-in-out forwards;
-            top: 0;
         }
     }
 
@@ -1183,7 +1218,7 @@ padding-top: 6rem;
     .container {
 
         .topSection {
-            
+
             .centerFrame {
                 flex-direction: column;
                 gap: 2rem;
@@ -1481,5 +1516,3 @@ padding-top: 6rem;
 
 
 }
-
-
