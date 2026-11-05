@@ -250,63 +250,7 @@ export const projectsData = [
         }
     },
 
-    {
-        id: "igor",
-        title: "Igor Lyrical Booklet",
-        subtitle: " An experimental graphic experience for a music album",
-        projectColor: "#c91779",
-        skills: ["Prepress", "Production", "Final Art"],
-        Year: ["2024"],
-        summary: "For music fans, some albums can make a real impact on them. Music transmits sensations to a level not many other forms of entertainment can, and we asked ourselves, what would these sensations look like graphically? \n \n Working with Photoshop, Illustrator and InDesign, we were able to craft a series of pieces that captured each song. These pieces were accompanied by the lyrics of said songs, to listen along when viewing this booklet. \n \n We had to plan, use and produce a series of special effects, such as a die-cut on a few pages, or the use of metal foil, as well as pantone inks where needed. The use of these effects were carefully checked by my superiors to attest they would have been correctly sent out to print.",
-        objective: "Music you can feel on a page",
-        objectiveHalf: "Experimental design on the new trends and tools",
 
-        remark: "Images ready to print",
-        remarkText: "Like any respected designer, we had to find and prepare images that were high enough quality to print. This meant checking not only whether we were free to use them, but also their PPI. A crude lesson any designer has faced at least once in their career, but one that is already in my past.",
-
-        takeaway1: "Letting lose",
-        takeawayText1: "As designers, we constantly live inside boxes and sometimes it's good to let our creative side break the rules. That's where this spontaneous and comic-like style came from.",
-        takeaway2: "Correct Image Formats",
-        takeawayText2: "Naming and image formats are part of the daily life os a designer. This project, and all the assets required demanded a consistent naming format, and made us check those TIFF images.",
-        takeaway3: "CMYK and color",
-        takeawayText3: "Learned the hard way that the colors on the screen are not what we get on the page. This was one of those projects where I had to experiment with inks like Pantone",
-
-        videoPromo: "",
-
-        //Grid Image is both the select and the more projects Image
-        gridImage: "/portfolio/projectImages/igor/Image (2).webp",
-
-        images: {
-
-            productTop: "/portfolio/projectImages/igor/Image (1).webp",
-
-            productImage: "/portfolio/projectImages/igor/Image (4).webp",
-
-            takeawayImage: "/portfolio/projectImages/igor/Image (5).webp",
-
-            grid1: "/portfolio/projectImages/igor/Image (2).webp",
-            grid2: "/portfolio/projectImages/igor/Image (3).webp",
-            grid3: "/portfolio/projectImages/igor/Image (4).webp",
-            grid4: "/portfolio/projectImages/igor/Image (5).webp",
-            grid5: "/portfolio/projectImages/igor/Image (6).webp",
-            grid6: "/portfolio/projectImages/igor/Image (7).webp",
-            grid7: "/portfolio/projectImages/igor/Image (8).webp",
-
-
-            gallery: [
-                "/portfolio/projectImages/igor/Image (1).webp",
-                "/portfolio/projectImages/igor/Image (2).webp",
-                "/portfolio/projectImages/igor/Image (3).webp",
-                "/portfolio/projectImages/igor/Image (4).webp",
-                "/portfolio/projectImages/igor/Image (5).webp",
-                "/portfolio/projectImages/igor/Image (6).webp",
-                "/portfolio/projectImages/igor/Image (7).webp",
-                "/portfolio/projectImages/igor/Image (8).webp",
-
-            ]
-
-        }
-    },
     {
         id: "web",
         title: "This Website",
@@ -360,6 +304,63 @@ export const projectsData = [
                 "/portfolio/projectImages/portfolio/Image (7).webp",
                 "/portfolio/projectImages/portfolio/Image (8).webp",
                 "/portfolio/projectImages/portfolio/Image (9).webp",
+            ]
+
+        }
+    },
+    {
+        id: "igor",
+        title: "Igor Lyrical Booklet",
+        subtitle: " An experimental graphic experience for a music album",
+        projectColor: "#c91779",
+        skills: ["Prepress", "Production", "Final Art"],
+        Year: ["2024"],
+        summary: "For music fans, some albums can make a real impact on them. Music transmits sensations to a level not many other forms of entertainment can, and we asked ourselves, what would these sensations look like graphically? \n \n Working with Photoshop, Illustrator and InDesign, we were able to craft a series of pieces that captured each song. These pieces were accompanied by the lyrics of said songs, to listen along when viewing this booklet. \n \n We had to plan, use and produce a series of special effects, such as a die-cut on a few pages, or the use of metal foil, as well as pantone inks where needed. The use of these effects were carefully checked by my superiors to attest they would have been correctly sent out to print.",
+        objective: "Music you can feel on a page",
+        objectiveHalf: "Experimental design on the new trends and tools",
+
+        remark: "Images ready to print",
+        remarkText: "Like any respected designer, we had to find and prepare images that were high enough quality to print. This meant checking not only whether we were free to use them, but also their PPI. A crude lesson any designer has faced at least once in their career, but one that is already in my past.",
+
+        takeaway1: "Letting lose",
+        takeawayText1: "As designers, we constantly live inside boxes and sometimes it's good to let our creative side break the rules. That's where this spontaneous and comic-like style came from.",
+        takeaway2: "Correct Image Formats",
+        takeawayText2: "Naming and image formats are part of the daily life os a designer. This project, and all the assets required demanded a consistent naming format, and made us check those TIFF images.",
+        takeaway3: "CMYK and color",
+        takeawayText3: "Learned the hard way that the colors on the screen are not what we get on the page. This was one of those projects where I had to experiment with inks like Pantone",
+
+        videoPromo: "",
+
+        //Grid Image is both the select and the more projects Image
+        gridImage: "/portfolio/projectImages/igor/Image (2).webp",
+
+        images: {
+
+            productTop: "/portfolio/projectImages/igor/Image (1).webp",
+
+            productImage: "/portfolio/projectImages/igor/Image (4).webp",
+
+            takeawayImage: "/portfolio/projectImages/igor/Image (5).webp",
+
+            grid1: "/portfolio/projectImages/igor/Image (2).webp",
+            grid2: "/portfolio/projectImages/igor/Image (3).webp",
+            grid3: "/portfolio/projectImages/igor/Image (4).webp",
+            grid4: "/portfolio/projectImages/igor/Image (5).webp",
+            grid5: "/portfolio/projectImages/igor/Image (6).webp",
+            grid6: "/portfolio/projectImages/igor/Image (7).webp",
+            grid7: "/portfolio/projectImages/igor/Image (8).webp",
+
+
+            gallery: [
+                "/portfolio/projectImages/igor/Image (1).webp",
+                "/portfolio/projectImages/igor/Image (2).webp",
+                "/portfolio/projectImages/igor/Image (3).webp",
+                "/portfolio/projectImages/igor/Image (4).webp",
+                "/portfolio/projectImages/igor/Image (5).webp",
+                "/portfolio/projectImages/igor/Image (6).webp",
+                "/portfolio/projectImages/igor/Image (7).webp",
+                "/portfolio/projectImages/igor/Image (8).webp",
+
             ]
 
         }

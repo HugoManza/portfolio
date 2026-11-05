@@ -187,6 +187,42 @@ a {
     }
 }
 
+@keyframes SlideLeftIn {
+
+    0% {
+        opacity: 0;
+        transform: translateX(-10vw);
+        /* Starts slightly above */
+    }
+
+  
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+        /* Rests at original position */
+    }
+
+}
+
+@keyframes SlideRightIn {
+
+    0% {
+        opacity: 0;
+        transform: translateX(10vw);
+        /* Starts slightly above */
+    }
+
+   
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+        /* Rests at original position */
+    }
+
+}
+
 .header {
     display: flex;
     padding: 1.5rem 0 1rem;
@@ -307,10 +343,31 @@ a {
                 max-width: 50%;
                 width: 100%;
 
+
+
+
+
+
+
+
                 .textFrame {
                     display: flex;
                     flex-direction: column;
                     gap: .5rem;
+                  
+
+                    h1 {
+                        animation: SlideLeftIn .6s ease-out forwards;
+                        animation-delay: .4s;
+                        opacity: 0;
+                    }
+
+                    h4 {
+                        animation: SlideLeftIn .6s ease-out forwards;
+                        animation-delay: .7s;
+                        opacity: 0;
+                    }
+
                 }
 
                 .ctaButton {
@@ -325,6 +382,10 @@ a {
                     border: 1px $Main_Black solid;
                     color: $Main_Black;
                     transition: all .2s ease-in;
+
+                    animation: SlideLeftIn .6s ease-out forwards;
+                    animation-delay: 1s;
+                    opacity: 0;
 
                     span {
                         font-size: 1.75rem;
@@ -354,6 +415,9 @@ a {
             .imageCont {
                 max-width: 50%;
                 width: 100%;
+                opacity: 0;
+                animation: SlideRightIn 1.6s ease-out forwards;
+                animation-delay: 2.4s;
 
                 .img {
                     object-fit: cover;
@@ -1374,7 +1438,7 @@ a {
 
                     height: 40vh;
                     max-width: 100vw;
-                padding: 0 1rem;
+                    padding: 0 1rem;
 
                     .frameGallery {
                         gap: 0;
@@ -1416,7 +1480,7 @@ a {
                     width: 100%;
                     gap: 1rem;
                     max-width: 100vw;
-                padding: 0 1rem;
+                    padding: 0 1rem;
 
                     .imagesFramed {
                         display: flex;
@@ -1471,8 +1535,8 @@ a {
                     gap: 2rem;
                     justify-content: center;
                     flex-direction: column;
-                     max-width: 100vw;
-                padding: 0 1rem;
+                    max-width: 100vw;
+                    padding: 0 1rem;
 
                     .takeawayBox {
                         width: 100%;
