@@ -64,7 +64,7 @@ const Head = () => {
           <div className="navItems">
             <Link to="/Projects" className="navButton"><h5>Projects</h5></Link>
             <Link to="/AboutMe" className="hide navButton " ><h5>About Me</h5></Link>
-            <a href="https://www.linkedin.com/in/hugo-manzano-lara/" className="navContact navButton  "><h5>Contact Me</h5  ></a>
+            <a href="https://www.linkedin.com/in/hugo-manzano-lara/" target="_blank" className="navContact navButton  "><h5>Contact Me</h5  ></a>
           </div>
 
           <button className='mobileMenu' onClick={toggleMenu}>
@@ -82,7 +82,7 @@ const Head = () => {
           <Link to="/Projects" className='navButton' onClick={toggleMenu}><h5>Projects</h5></Link>
           <Link to="/AboutMe" className='navButton hide' onClick={toggleMenu}><h5>About Me</h5></Link>
           <a className='navButton hide' href="#contact" onClick={toggleMenu}><h5>Contact</h5></a>
-          <a href="https://www.linkedin.com/in/hugo-manzano-lara/" className="navContact navButton  "><h5>Contact Me</h5  ></a>
+          <a href="https://www.linkedin.com/in/hugo-manzano-lara/" target="_blank" className="navContact navButton  "><h5>Contact Me</h5  ></a>
 
         </section>
       </div>
