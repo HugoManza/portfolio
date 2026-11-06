@@ -249,8 +249,6 @@ export const projectsData = [
 
         }
     },
-
-
     {
         id: "web",
         title: "This Website",
@@ -279,9 +277,9 @@ export const projectsData = [
 
         images: {
 
-            productTop: "/portfolio/projectImages/portfolio/Image (1).webp",
+            productTop: "/portfolio/projectImages/portfolio/Image (2).webp",
 
-            productImage: "/portfolio/projectImages/portfolio/Image (2).webp",
+            productImage: "/portfolio/projectImages/portfolio/Image (9).webp",
 
             takeawayImage: "/portfolio/projectImages/portfolio/Image (7).webp",
 

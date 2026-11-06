@@ -195,7 +195,7 @@ a {
         /* Starts slightly above */
     }
 
-  
+
 
     100% {
         opacity: 1;
@@ -213,7 +213,7 @@ a {
         /* Starts slightly above */
     }
 
-   
+
 
     100% {
         opacity: 1;
@@ -354,7 +354,7 @@ a {
                     display: flex;
                     flex-direction: column;
                     gap: .5rem;
-                  
+
 
                     h1 {
                         animation: SlideLeftIn .6s ease-out forwards;
@@ -598,6 +598,7 @@ a {
 .footer {
     background-color: $backgroundBlack;
     z-index: 1000;
+    color: $Main_White;
 
     .footerFrame {
         display: flex;
@@ -607,6 +608,7 @@ a {
         width: 100%;
         justify-self: center;
         border-top: 1px solid $OpacityBlack;
+        align-items: center;
 
 
         .logo {}
@@ -632,6 +634,7 @@ a {
                 align-items: center;
                 gap: .25rem;
 
+                &:hover {}
 
 
             }
@@ -963,7 +966,7 @@ a {
                     }
 
                     .imageCont {
-                       
+
                         width: 50%;
                         max-height: 50vh;
 
@@ -1281,6 +1284,10 @@ a {
                 display: flex;
             }
 
+            .mail {
+                display: none;
+            }
+
             .socialLinks {
                 gap: 1rem;
             }
@@ -1525,7 +1532,7 @@ a {
                         .explainedText {
                             width: 100%;
 
-                            
+
                             p {
                                 width: 100%;
                             }
