@@ -16,7 +16,7 @@ const HomeMore = () => {
                 <div className="titles"><h2>My Experience</h2><h4>Because you deserve to know who you're working with</h4></div>
                 <div className="centerFrame">
                     <div className="imgFrame">
-                        <img src="public\extraResources\FotoPerfil.webp" alt="" />
+                        <img src="./extraResources/FotoPerfil.webp" alt="" />
                     </div>
 
                     <div className="rightSide">
