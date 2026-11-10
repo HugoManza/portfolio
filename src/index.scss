@@ -646,7 +646,7 @@ span {
         display: flex;
         flex-direction: column;
         padding-top: 6rem;
-        border-top: 1px solid $Side_DarkGray;
+        border-top: 4px solid $Main_Accent;
 
 
         .topText {
@@ -699,7 +699,7 @@ span {
 
                 box-sizing: border-box;
                 transition: all .1s ease-in;
-                border: 1px $Side_LightGray solid;
+                border: 1px $Main_White solid;
 
                 //Animacion ajustes
                 opacity: 0;
