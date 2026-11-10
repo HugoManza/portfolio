@@ -7,7 +7,7 @@ const HomeMore = () => {
         <div className="homeMore">
 
             <section className='quote'>
-                <h1>“<accent>Talented</accent>,< br className='phoneShow' /><accent>Humble</accent> <br /> and <accent>Hungry to grow</accent>”</h1>
+                <h1>“<accent>Talented</accent>,< br className='phoneShow' /><accent>Humble</accent> <br /> and <accent className='blue' >Hungry to grow</accent>”</h1>
                 <li><h4> — Pilar de la Banda <br />Digital Design Lead at Prodigioso Volcán/ Jungle</h4></li>
             </section>
 
