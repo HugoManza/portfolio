@@ -467,8 +467,8 @@ span {
         flex-direction: column;
         position: sticky;
 
-        padding: 9rem 0;
-        gap: 12rem;
+        padding: 8rem 0;
+        gap: 10rem;
         display: flex;
         flex-direction: column;
         background-color: $Side_LightGray;
@@ -482,9 +482,10 @@ span {
             display: flex;
             align-items: center;
             flex-direction: column;
+            justify-content: center;
 
             gap: 1rem;
-            min-height: 50vh;
+            min-height: 45vh;
 
             h1 {
                 width: 80%;
@@ -1592,7 +1593,7 @@ span {
 
                 max-width: 100%;
                 gap: .25rem;
-                min-height: 50vh;
+                min-height: 40vh;
                 justify-content: center;
 
 
