@@ -9,7 +9,7 @@
 //Color Variables
 $Main_Black: #101011;
 $Main_White: #fafafa;
-$Side_LightGray: #c4c4c4;
+$Side_LightGray: #ebebeb;
 $Side_DarkGray: #3e3e3e;
 $backgroundBlack: #141414;
 $Main_Accent: #011dd1;
@@ -18,9 +18,7 @@ $OpacityWhite: rgba(4, 4, 4, 0.25);
 $NoColor: rgba(253, 253, 253, 0);
 
 
-.hide {
-    display: none;
-}
+
 
 * {
     border: 0px solid tomato;
@@ -102,6 +100,14 @@ sub {
     font-weight: 500;
 }
 
+accent {
+    &:hover {
+        color: $Main_Accent;
+
+        transition: all .1s ease-in;
+    }
+}
+
 p {
     font-weight: 300;
     font-size: 1.5rem;
@@ -109,7 +115,7 @@ p {
 }
 
 b {
-    font-weight: bold;
+    font-weight: 500;
 }
 
 i {
@@ -131,6 +137,17 @@ a {
         ;
     }
 
+}
+
+li {
+    font-weight: 300;
+    font-size: 1.5rem;
+    line-height: 130%;
+    margin-left: 1.5rem;
+}
+
+span {
+    font-size: 1.75rem;
 }
 
 
@@ -310,7 +327,7 @@ a {
     }
 }
 
-//Project select area
+//Home Area
 .container {
     display: flex;
     flex-direction: column;
@@ -319,126 +336,315 @@ a {
 
 
 
-    .topSection {
-        color: $Main_Black;
+
+    .topFinal {
+        width: 100%;
         display: flex;
-        min-height: 100vh;
-        padding-top: 4rem;
-        background-color: $Main_White;
-        align-items: center;
-        justify-content: center;
+        flex-direction: column;
+        position: sticky;
         top: 0;
         z-index: 0;
-        position: sticky;
 
         .centerFrame {
-            display: flex;
+
             max-width: 76%;
             gap: 2rem;
+            color: $Main_Black;
+            display: flex;
 
-            .leftFrame {
+            min-height: 100vh;
+            padding-top: 4rem;
+            background-color: $Main_White;
+            align-items: center;
+            justify-content: center;
+            justify-self: center;
+            align-self: center;
+
+
+            .heightFrame {
                 display: flex;
-                flex-direction: column;
-                gap: 4rem;
-                max-width: 50%;
-                width: 100%;
+                gap: 2rem;
 
-
-
-
-
-
-
-
-                .textFrame {
+                .leftFrame {
                     display: flex;
                     flex-direction: column;
-                    gap: .5rem;
+                    gap: 4rem;
+                    max-width: 50%;
+                    width: 100%;
 
 
-                    h1 {
-                        animation: SlideLeftIn .6s ease-out forwards;
-                        animation-delay: .4s;
-                        opacity: 0;
+
+
+
+
+
+
+                    .textFrame {
+                        display: flex;
+                        flex-direction: column;
+                        gap: .5rem;
+
+
+                        h1 {
+                            animation: SlideLeftIn .6s ease-out forwards;
+                            animation-delay: .4s;
+                            opacity: 0;
+                        }
+
+                        h4 {
+                            animation: SlideLeftIn .6s ease-out forwards;
+                            animation-delay: .7s;
+                            opacity: 0;
+                        }
+
                     }
 
-                    h4 {
+                    .ctaButton {
+                        display: flex;
+                        align-items: center;
+                        gap: 1rem;
+                        padding: .75rem 2rem;
+                        padding-left: .75rem;
+
+                        color: $Main_White;
+                        width: max-content;
+                        border: 1px $Main_Black solid;
+                        color: $Main_Black;
+                        transition: all .2s ease-in;
+
                         animation: SlideLeftIn .6s ease-out forwards;
-                        animation-delay: .7s;
+                        animation-delay: 1s;
                         opacity: 0;
+
+                        span {
+                            font-size: 1.75rem;
+                            font-weight: 200;
+
+
+                            height: 1.5rem;
+                            width: 1.5rem;
+                            align-items: center;
+                            justify-content: center;
+                            display: flex;
+
+                        }
+
+                        &:hover {
+                            background-color: $Main_Accent;
+                            color: $Main_White;
+                            transition: all .2s ease-out;
+
+                        }
                     }
+
+
 
                 }
 
-                .ctaButton {
-                    display: flex;
-                    align-items: center;
-                    gap: 1rem;
-                    padding: .75rem 2rem;
-                    padding-left: .75rem;
+                .imageCont {
+                    max-width: 50%;
+                    width: 100%;
+                    opacity: 0;
+                    animation: SlideRightIn 1.6s ease-out forwards;
+                    animation-delay: 2.4s;
 
-                    color: $Main_White;
-                    width: max-content;
-                    border: 1px $Main_Black solid;
-                    color: $Main_Black;
+                    .img {
+                        object-fit: cover;
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+
+        }
+    }
+
+
+    .homeMore {
+
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        position: sticky;
+
+        padding: 9rem 0;
+        gap: 12rem;
+        display: flex;
+        flex-direction: column;
+        background-color: $Side_LightGray;
+
+
+        .quote {
+            width: 76%;
+            align-items: center;
+            justify-self: center;
+            align-self: center;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+
+            gap: 1rem;
+            min-height: 50vh;
+
+            h1 {
+                width: 80%;
+                text-align: center;
+                align-items: center;
+                justify-self: center;
+
+                accent {
+
                     transition: all .2s ease-in;
 
-                    animation: SlideLeftIn .6s ease-out forwards;
-                    animation-delay: 1s;
-                    opacity: 0;
-
-                    span {
-                        font-size: 1.75rem;
-                        font-weight: 200;
-
-
-                        height: 1.5rem;
-                        width: 1.5rem;
-                        align-items: center;
-                        justify-content: center;
-                        display: flex;
-
-                    }
-
-                    &:hover {
-                        background-color: $Main_Black;
-                        color: $Main_White;
-                        transition: all .2s ease-out;
-
-                    }
                 }
-
-
 
             }
 
-            .imageCont {
-                max-width: 50%;
+            li {
+                text-align: center;
+                list-style-type: none;
+                display: flex;
                 width: 100%;
-                opacity: 0;
-                animation: SlideRightIn 1.6s ease-out forwards;
-                animation-delay: 2.4s;
+                align-self: flex-end;
+                justify-content: center;
+                text-align: center;
 
-                .img {
-                    object-fit: cover;
-                    width: 100%;
-                    height: 100%;
+                // list-style-type: ' ';
+            }
+        }
+
+        .experience {
+            width: 76%;
+            align-self: center;
+            justify-self: center;
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+
+            .titles {}
+
+            .centerFrame {
+                display: flex;
+                gap: 4rem;
+
+                .imgFrame {
+                    width: 44%;
+                    max-height: 100vh;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+
+                .rightSide {
+                    display: flex;
+                    flex-direction: column;
+                    width: 60%;
+                    gap: 4rem;
+
+                    .expList {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 2.25rem;
+
+                        .expItem {
+                            display: flex;
+                            flex-direction: column;
+
+                            .titlesExp {
+                                padding-bottom: 1rem;
+
+                                h3 {}
+                            }
+
+                            .text {
+                                display: flex;
+                                flex-direction: column;
+                                gap: .5rem;
+                            }
+                        }
+                    }
+
+                    .ctaButton {
+                        width: 100%;
+                        display: flex;
+                        justify-content: end;
+                        align-items: end;
+                    }
                 }
             }
 
 
         }
+
+        .designSyst {
+            width: 76%;
+            align-self: center;
+            justify-self: center;
+
+            display: flex;
+            flex-direction: column;
+            gap: 4rem;
+            padding-bottom: 9rem;
+            padding-top: 6rem;
+
+            justify-content: center;
+
+            .titles {}
+
+            .phases {
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+                gap: 3rem;
+                row-gap: 1rem;
+
+                .phase {
+                    gap: .5rem;
+                    display: flex;
+                    flex-direction: column;
+                    max-width: 30%;
+
+                    &:hover {
+                        accent {
+                            color: $Main_Accent;
+                        }
+                    }
+
+                    accent {
+
+                        transition: all .2s ease-in;
+
+                    }
+
+
+                }
+
+
+
+            }
+        }
+
+
     }
 
+
     .Projects {
-        z-index: 1;
         position: relative;
+        z-index: 2;
+
         background-color: $Main_White;
         min-height: 100vh;
         display: flex;
         flex-direction: column;
-        padding-top: 4rem;
-        border-top: 1px solid $Side_LightGray;
+        padding-top: 6rem;
+        border-top: 1px solid $Side_DarkGray;
+
 
         .topText {
             width: 76%;
@@ -586,8 +792,25 @@ a {
             grid-area: div7;
         }
     }
+}
 
 
+.butLetsWork {
+    padding: .5rem 1.5rem;
+    border: $Main_Black 1px solid;
+    color: $Main_Black;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    transition: all .2s ease-in;
+
+
+    &:hover {
+        color: $Main_White;
+        border: $Main_Accent 1px solid;
+        background-color: $Main_Accent;
+        transition: all .2s ease-out;
+    }
 }
 
 .contProjects {
@@ -1136,8 +1359,26 @@ a {
     }
 }
 
+.phoneHide {
+    display: flex !important;
+}
+
+.phoneShow {
+    display: none !important;
+}
+
+
+
 
 @media (max-width: 1080px) {
+
+    .phoneHide {
+        display: none !important;
+    }
+
+    .phoneShow {
+        display: flex !important;
+    }
 
     body {}
 
@@ -1173,17 +1414,21 @@ a {
         line-height: 130%;
     }
 
+    li {
+        font-size: 1.25rem;
+    }
 
+    .phoneShow {
+        display: flex;
+    }
 
     .header {
         padding: 1rem 1rem;
-        width: 100%;
         border-radius: 0;
         align-items: center;
 
         .headerFrame {
             width: 100%;
-
 
             .logoDesktop {
                 display: none;
@@ -1297,7 +1542,7 @@ a {
 
     .container {
 
-        .topSection {
+        .topFinal {
             width: 100%;
 
             .centerFrame {
@@ -1308,40 +1553,131 @@ a {
                 justify-content: center;
                 align-items: center;
 
-                .leftFrame {
-                    max-width: 100%;
-                    width: 100%;
-                    gap: 2rem;
+                .heightFrame {
 
-                    .textFrame {
+
+
+                    .leftFrame {
+                        max-width: 100%;
                         width: 100%;
-                        gap: 1rem;
+                        gap: 2rem;
+
+                        .textFrame {
+                            width: 100%;
+                            gap: 1rem;
+                        }
+
+                        .ctaButton {
+                            width: 100%;
+                            justify-content: center;
+                        }
                     }
 
-                    .ctaButton {
-                        width: 100%;
-                        justify-content: center;
+                    .imageCont {
+                        display: none;
                     }
-                }
-
-                .imageCont {
-                    display: none;
                 }
             }
         }
 
-        .Projects {
+        .homeMore {
+            width: 100%;
+            gap: 6rem;
+            padding-bottom: 6rem;
 
+            .quote {
+                width: 100%;
+                padding: 0 1rem;
+                display: flex;
+
+                max-width: 100%;
+                gap: .25rem;
+                min-height: 50vh;
+                justify-content: center;
+
+
+                h1 {
+                    height: 100%;
+                    width: 100%;
+
+                    gap: 0;
+                }
+            }
+
+            .experience {
+                width: 100%;
+                padding: 0 1rem;
+                gap: 1rem;
+
+                .centerFrame {
+                    flex-direction: column;
+                    gap: .75rem;
+
+                    .imgFrame {
+                        width: 100%;
+                    }
+
+                    .rightSide {
+                        width: 100%;
+                        gap: .75rem;
+
+                        .expList {
+                            gap: 1rem;
+
+                            .expItem {
+                                .titlesExp {
+                                    padding-bottom: .5rem;
+                                }
+                            }
+                        }
+                    }
+
+                    .ctaButton {
+                        width: 100%;
+                        align-items: center;
+
+                        a {
+                            justify-content: center;
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+
+            .designSyst {
+                width: 100%;
+                padding: 0 1rem;
+                gap: 1rem;
+
+                .phases {
+                    flex-direction: column;
+                    gap: .75rem;
+
+                    .phase {
+                        max-width: 100%;
+                    }
+                }
+            }
+
+        }
+
+        .Projects {
+            padding-top: 4rem;
+gap: 1rem;
+
+padding-bottom: 6rem;
             .topText {
                 width: 100%;
                 padding: 0 1rem;
+                gap: .25rem;
             }
 
             .ProjectsFrame {
-                padding: 2rem 1rem;
+                padding: 0rem 1rem;
                 display: flex;
                 flex-direction: column;
                 width: 100%;
+                gap: .75rem;
 
                 .ProjectClick {
 
@@ -1613,4 +1949,8 @@ a {
     }
 
 
+}
+
+.hide {
+    display: none !important;
 }

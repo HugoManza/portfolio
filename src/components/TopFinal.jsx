@@ -2,9 +2,11 @@ import React from 'react'
 
 const TopFinal = () => {
     return (
-        <div className="topSection" >
-            <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=chevron_right,chevron_left,menu,close" />
-            <div className="centerFrame">
+
+        <div className="centerFrame">
+            <div className="heightFrame">
+                <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=chevron_right,chevron_left,menu,close" />
+
                 <div className="leftFrame">
                     <div className="textFrame">
                         <h1>Turn your ideas into real products</h1>
@@ -17,9 +19,12 @@ const TopFinal = () => {
                     <img src="./extraResources/HugoFoto_Head.png" alt="" />
                 </div>
             </div>
-
-
         </div>
+
+
+
+
+
 
 
     )
