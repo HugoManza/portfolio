@@ -253,7 +253,7 @@ export const projectsData = [
         id: "web",
         title: "This Website",
         subtitle: "Find out how this portfolio was made",
-        projectColor: "#ff2b2b",
+        projectColor: "#011dd1",
         skills: ["UI/UX", "Frontend", "Prototyping"],
         Year: ["2026"],
         summary: "This whole website was made by me, yes. That goes from doing the lowfis on paper, to working Figma prototypes, to every line of code, all compiled and uploaded so you can be reading this. \n \n Having studied UX and UI design, as well as having worked as a UX/ UI Designer, having a good portfolio web is key to any good designer. Programmed using the framework React, I applied my knowledge in Font-End development to work my way from prototype to final web. This was all uploaded to github pages, using remote repositories that allowed me to work on different variations at once. Now, you can see some of the projects I am most proud of, and of course, get in contact with me.",
