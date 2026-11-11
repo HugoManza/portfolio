@@ -10,7 +10,7 @@ const TopFinal = () => {
                 <div className="leftFrame">
                     <div className="textFrame">
                         <h1>Turn your ideas into real products</h1>
-                        <h4>Building value through a user first focus design while producing high quality results</h4>
+                        <h4>Product Designer building value through a user first focus design</h4>
                     </div>
                     <a className="ctaButton" target="_blank" href="https://www.linkedin.com/in/hugo-manzano-lara/"><h4>Contact Me</h4><span className="material-symbols-outlined">chevron_right</span></a>
                 </div>
