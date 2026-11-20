@@ -417,6 +417,10 @@ span {
                         animation-delay: 1s;
                         opacity: 0;
 
+                        h3 {
+                            font-weight: 350;
+                        }
+
                         span {
                             font-size: 1.75rem;
                             font-weight: 200;
@@ -427,6 +431,7 @@ span {
                             align-items: center;
                             justify-content: center;
                             display: flex;
+
 
                         }
 
@@ -699,7 +704,7 @@ span {
 
                 box-sizing: border-box;
                 transition: all .1s ease-in;
-                
+
 
                 //Animacion ajustes
                 opacity: 0;
@@ -712,7 +717,7 @@ span {
 
                 &:hover {
 
-                   
+
                     transition: all .1s ease-out;
                 }
 
@@ -809,6 +814,9 @@ span {
     background-color: $Main_Accent;
     transition: all .2s ease-in;
 
+    h3 {
+        font-weight: 350;
+    }
 
     &:hover {
         color: $Main_White;
