@@ -62,8 +62,9 @@ const Head = () => {
 
         <nav className="nav">
           <div className="navItems">
+            <Link to="/AboutMe" className="navButton " ><h5>About Me</h5></Link>
             <Link to="/Projects" className="navButton"><h5>Projects</h5></Link>
-            <Link to="/AboutMe" className="hide navButton " ><h5>About Me</h5></Link>
+            
             <a href="https://www.linkedin.com/in/hugo-manzano-lara/" target="_blank" className="navContact navButton  "><h5>Contact Me</h5  ></a>
           </div>
 

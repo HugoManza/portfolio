@@ -18,7 +18,12 @@ $OpacityWhite: rgba(4, 4, 4, 0.25);
 $NoColor: rgba(253, 253, 253, 0);
 
 
+//Gap Variables
 
+$Main_Gap: 1rem;
+$Small_Gap: .5rem;
+$Big_Gap: 2rem;
+$Pad_Section: 6rem;
 
 * {
     border: 0px solid tomato;
@@ -278,7 +283,7 @@ span {
             align-items: center;
 
             .navItems {
-                gap: 1.5rem;
+                gap: 2rem;
                 display: flex;
                 align-items: center;
 
@@ -803,32 +808,360 @@ span {
     }
 }
 
-
-.butLetsWork {
-    padding: .5rem 1.5rem;
-    border: $Main_Accent 1px solid;
-    color: $Main_White;
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    background-color: $Main_Accent;
-    transition: all .2s ease-in;
-
-    h3 {
-        font-weight: 350;
-    }
-
-    &:hover {
-        color: $Main_White;
-        border: $backgroundBlack 1px solid;
-        background-color: $backgroundBlack;
-        transition: all .2s ease-out;
-    }
-}
-
 .contProjects {
 
     padding-top: 4rem;
+}
+
+
+.AboutMe {
+
+
+    min-width: 100vh;
+    background-color: $Main_White;
+    gap: 4rem;
+
+
+
+    .topSection {
+        min-width: 100vw;
+        min-height: 100vh;
+        height: 100%;
+        width: 100%;
+        background-image: url("./extraResources/FotoAboutMe.webp");
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .centerFrame {
+            display: flex;
+            max-width: 76%;
+
+            width: 100%;
+
+
+            .leftFrame {
+
+                display: flex;
+                flex-direction: column;
+                gap: 3rem;
+
+
+                .textFrame {
+                    display: flex;
+                    flex-direction: column;
+                    background-color: $Main_White;
+                    padding: 1.5rem 2rem;
+                    gap: .25rem;
+                }
+
+                .cta {
+                    max-width: fit-content;
+                }
+            }
+
+        }
+    }
+
+    .bottomSection {
+        display: flex;
+        flex-direction: column;
+        width: 76%;
+        justify-self: center;
+        padding-bottom: $Pad_Section;
+
+        .myExp {
+            display: flex;
+
+            flex-direction: column;
+            width: 100%;
+            display: flex;
+            justify-self: center;
+            gap: 2rem;
+            padding-top: $Pad_Section;
+            padding-bottom: $Pad_Section;
+
+            .centerFrame {
+                display: flex;
+                gap: 5rem;
+                justify-content: space-between;
+
+                .side {
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 3rem;
+
+
+                    .experience {
+                        display: flex;
+                        flex-direction: column;
+                        gap: $Small_Gap;
+
+                        ul {
+                            display: flex;
+                            flex-direction: column;
+                            gap: .5rem;
+                        }
+
+                        .titles {
+                            display: flex;
+                            flex-direction: column;
+
+                            .clik {
+                                display: flex;
+                                flex-direction: column;
+                                padding-bottom: .125rem;
+                            }
+                        }
+
+                        a {
+                            text-decoration: underline;
+
+                            & :hover {
+                                color: $Main_Accent;
+                                text-decoration: underline;
+                            }
+                        }
+                    }
+
+                    li {
+                        list-style-type: disc;
+                    }
+
+                }
+            }
+
+
+        }
+
+        .tools {
+            display: flex;
+
+            flex-direction: column;
+            width: 100%;
+            display: flex;
+            justify-self: center;
+            gap: 2rem;
+            padding-top: $Pad_Section;
+            padding-bottom: $Pad_Section;
+
+            .programSect {
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
+
+                .programs {
+                    display: flex;
+                    justify-content: space-between;
+
+
+                    .prog {
+                        max-width: 4rem;
+                        width: 100%;
+                        align-items: center;
+                        justify-content: center;
+                        display: flex;
+                        flex-direction: column;
+                        gap: .5rem;
+                        transition: all .2s ease-out;
+
+
+
+
+                        img {
+                            max-width: 4rem;
+                            width: 100%;
+                            transition: all .2s ease-out;
+                        }
+
+                        p {
+                            opacity: 0;
+                            transition: all .2s ease-in;
+                        }
+
+                        &:hover {
+
+                            max-width: 4.5rem;
+
+                            p {
+                                opacity: 100%;
+                                transition: all .2s ease-out;
+                            }
+
+                            img {
+                                max-width: 4.25rem;
+                                transition: all .2s ease-out;
+                            }
+                        }
+
+                    }
+                }
+
+                .bottomDiv {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 2.5rem;
+
+                    .skills {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 1rem;
+
+                        .skillSet {
+                            display: flex;
+                            overflow: hidden;
+                            width: 100%;
+                            gap: 2.5rem;
+                            user-select: none;
+
+                            .skillTrack {
+                                flex-shrink: 0;
+                                display: flex;
+                                align-items: center;
+                                min-width: 100%;
+                                gap: 2.5rem;
+                                list-style: none;
+                                padding: 0;
+                                margin: 0;
+
+                                animation: scrollLeft 35s linear infinite;
+
+                                li {
+                                    white-space: nowrap;
+
+                                    &:hover {
+                                        color: $Main_Accent;
+                                    }
+
+                                }
+                            }
+
+                            //Pauses scrolling
+                            &:hover .skillTrack {
+                                //animation-play-state: paused;
+
+                            }
+                        }
+
+                        @keyframes scrollLeft {
+                            from {
+                                transform: translateX(0);
+                            }
+
+                            to {
+                                transform: translateX(calc(-100% - #{2.5rem}));
+                            }
+                        }
+                    }
+
+                    .language {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 1rem;
+
+                        .leng {
+                            display: flex;
+                            gap: 1rem;
+
+                            .lang {
+                                max-width: 50%;
+                                display: flex;
+                                flex-direction: column;
+                                gap: .5rem;
+                            }
+                        }
+                    }
+                }
+            }
+
+
+
+            .titles {
+                display: flex;
+                gap: .5rem;
+            }
+        }
+
+        .cta {
+
+
+            justify-self: center;
+
+            .button {
+                display: flex;
+                justify-content: end;
+
+            }
+        }
+    }
+
+    .black {
+        display: flex;
+        min-height: 100vh;
+        min-width: 100vw;
+        background-color: $backgroundBlack;
+        color: $Main_White;
+        padding-top: $Pad_Section;
+        justify-content: center;
+
+        .profPro {
+            width: 76%;
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+
+            .centerFrame {
+                display: flex;
+                gap: 2rem;
+
+                .leftSide {
+                    max-width: 50%;
+                    width: 100%;
+
+                    img {
+                        object-fit: cover;
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+
+                .rightSide {
+                    max-width: 50%;
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    gap: $Big_Gap;
+
+                    .cta {
+                        width: 100%;
+                        align-items: end;
+                        justify-content: end;
+                        justify-items: end;
+
+                        .button {
+                            width: max-content;
+                            justify-items: end;
+
+                            .butLetsWork {
+                                &:hover {
+                                    background-color: $Main_White;
+                                    color: $Main_Accent;
+                                }
+                            }
+
+
+
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+
+
 }
 
 .footer {
@@ -843,14 +1176,31 @@ span {
         padding: 4rem 6rem;
         width: 100%;
         justify-self: center;
-        border-top: 1px solid $OpacityBlack;
+        border-top: .5rem solid $Main_Accent;
         align-items: center;
 
 
-        .logo {}
+
+        p {
+
+            &:hover {
+                color: $Side_DarkGray;
+            }
+        }
+
+        .logo {
+
+            &:hover {
+                color: $Side_DarkGray;
+            }
+        }
 
         .logoPhone {
             display: none;
+
+            &:hover {
+                color: $Side_DarkGray;
+            }
         }
 
         .socialLinks {
@@ -870,7 +1220,9 @@ span {
                 align-items: center;
                 gap: .25rem;
 
-                &:hover {}
+                &:hover {
+                    color: $Main_Accent;
+                }
 
 
             }
@@ -1257,7 +1609,12 @@ span {
 }
 
 
-//More PRojects section
+
+
+
+
+
+//More Projects section
 .containerProjects {
     color: $Main_White;
     background-color: $backgroundBlack;
@@ -1338,6 +1695,9 @@ span {
 
 }
 
+
+//Small Items vvv
+
 .logo {
     font-family: outfit;
     font-weight: 700;
@@ -1351,17 +1711,31 @@ span {
 
 }
 
-.AboutMe {
+//Button
+.butLetsWork {
+    padding: .5rem 1.5rem;
+    border: $Main_Accent 1px solid;
+    color: $Main_White;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background-color: $Main_Accent;
+    transition: all .2s ease-in;
 
-    min-height: 100vh;
-    min-width: 100vh;
-    background-color: $Main_White;
+    h3 {
+        font-weight: 350;
+    }
 
-    .testArea {
-        color: $Main_Black;
-        padding-top: 4rem;
+    &:hover {
+        color: $Main_White;
+        border: $backgroundBlack 1px solid;
+        background-color: $backgroundBlack;
+        transition: all .2s ease-out;
     }
 }
+
+
+
 
 .projectsPage {
     background-color: $Main_Black;
@@ -1381,6 +1755,10 @@ span {
 }
 
 .blue {
+    color: $Main_Accent !important;
+}
+
+blue {
     color: $Main_Accent;
 }
 
@@ -1979,9 +2357,172 @@ span {
         }
     }
 
+    .AboutMe {
+        max-width: 100vw;
+        min-width: 0;
 
-}
+        .topSection {
+            max-width: 100vw;
 
-.hide {
-    display: none !important;
+            .centerFrame {
+                max-width: 100%;
+                padding: 1rem;
+                flex-direction: column;
+
+                .leftFrame {
+                    width: 100%;
+                    gap: 2rem;
+
+                    .cta {
+                        max-width: 100%;
+
+                        .butLetsWork {
+ width: 100%;
+                        align-items: center;
+                        justify-content: center;
+                        }
+                        
+                    }
+                }
+
+            }
+        }
+
+        .bottomSection {
+            width: 100%;
+            padding: 0 1rem;
+
+            .myExp {
+                .centerFrame {
+                    gap: 1rem;
+                    flex-direction: column;
+
+                    .side {
+                        gap: 1rem;
+                    }
+                }
+            }
+
+            .tools {
+                padding-bottom: 2rem;
+
+                .titles {
+                    flex-direction: column;
+                    gap: 0;
+                }
+
+                .programSect {
+                    .programs {
+
+
+                        .prog {
+                            gap: .5rem;
+                            max-width: 3rem;
+
+                            img {
+                                max-width: 3rem;
+                            }
+
+                            &:hover {
+
+                                max-width: 4.5rem;
+
+                                p {
+                                    opacity: 100%;
+                                    transition: all .2s ease-out;
+                                }
+
+                                img {
+                                    max-width: 3.25rem;
+                                    transition: all .2s ease-out;
+                                }
+                            }
+                        }
+
+
+                    }
+
+                    .bottomDiv {
+                        gap: 1rem;
+
+                        .language {
+                            flex-direction: column;
+                            gap: .5rem;
+
+                            .leng {
+                                display: flex;
+                                flex-direction: column;
+                                max-width: 100%;
+                                gap: .5rem;
+
+                                .lang {
+                                    max-width: 100%;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .cta {
+                width: 100%;
+                justify-self: left;
+                padding-bottom: 4rem;
+
+                .button {
+                    width: 100%;
+                    display: flex;
+                    justify-content: flex-start;
+
+                    .butLetsWork {
+                        width: 100%;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                }
+            }
+        }
+
+        .black {
+            .profPro {
+                width: 100%;
+                padding: 0 1rem;
+                .centerFrame {
+                    flex-direction: column;
+
+                    .leftSide {
+                        max-width: 100%;
+                    }
+
+                    .rightSide {
+                        max-width: 100%;
+
+                          .cta {
+                width: 100%;
+                justify-self: left;
+                padding-bottom: 4rem;
+
+                .button {
+                    width: 100%;
+                    display: flex;
+                    justify-content: flex-start;
+
+                    .butLetsWork {
+                        width: 100%;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                }
+            }
+                    }
+                }
+            }
+        }
+
+
+    }
+
+    .hide {
+        display: none !important;
+    }
 }

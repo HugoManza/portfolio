@@ -1,0 +1,15 @@
+const skills = [
+  "Prototyping",
+  "Wireframing",
+  "User Flows",
+  "Accesibility WCAG",
+  "User Testing",
+  "HTML5",
+  "Javascript",
+  "CSS",
+  "Pre-Press",
+  "Production",
+  "Layout Design",
+  "Brand Identity",
+  "Marketing",
+];
