@@ -830,6 +830,7 @@ span {
         width: 100%;
         background-image: url("/public/extraResources/FotoAboutMe.webp");
         background-size: cover;
+        background-position:  center ;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -1105,6 +1106,7 @@ span {
         color: $Main_White;
         padding-top: $Pad_Section;
         justify-content: center;
+        padding-bottom: $Pad_Section;
 
         .profPro {
             width: 76%;
@@ -1767,7 +1769,7 @@ blue {
 }
 
 
-@media (max-width: 1080px) {
+@media (max-width: 828px) {
 
     .phoneHide {
         display: none !important;
