@@ -100,24 +100,24 @@ const AboutMe = () => {
 
               <div className="programs">
                 <div className="prog">
-                  <img src='public/extraResources/Icons/figma-logo.svg' alt="Figma logo" /><p>Figma</p>
+                  <img src='./extraResources/Icons/figma-logo.svg' alt="Figma logo" /><p>Figma</p>
                 </div>
                 <div className="prog">
-                  <img src='public/extraResources/Icons/adobe-illustrator-logo.svg' alt="Illustrator logo" /><p>Illustrator</p>
+                  <img src='./extraResources/Icons/adobe-illustrator-logo.svg' alt="Illustrator logo" /><p>Illustrator</p>
                 </div>
 
 
                 <div className="prog">
-                  <img src='public/extraResources/Icons/adobe-photoshop-logo.svg' alt="Photoshop logo" /><p>Photoshop</p>
+                  <img src='./extraResources/Icons/adobe-photoshop-logo.svg' alt="Photoshop logo" /><p>Photoshop</p>
                 </div>
                 <div className="prog">
-                  <img src='public/extraResources/Icons/adobe-indesign-logo.svg' alt="InDesign logo" /><p>InDesign</p>
+                  <img src='./extraResources/Icons/adobe-indesign-logo.svg' alt="InDesign logo" /><p>InDesign</p>
                 </div>
                 <div className="prog">
-                  <img src='public/extraResources/Icons/github-logo-2.svg' alt="github logo" /><p>Github</p>
+                  <img src='./extraResources/Icons/github-logo-2.svg' alt="github logo" /><p>Github</p>
                 </div>
                 <div className="prog">
-                  <img src='public/extraResources/Icons/slack-logo.svg' alt="slack logo" /><p>Slack</p>
+                  <img src='./extraResources/Icons/slack-logo.svg' alt="slack logo" /><p>Slack</p>
                 </div>
               </div>
               <section className="bottomDiv">
@@ -163,7 +163,7 @@ const AboutMe = () => {
               <h4>Learn who I am </h4>
             </div>
             <div className="centerFrame">
-              <div className="leftSide"><img src="public/extraResources/PerfilProf.webp" alt="" /></div>
+              <div className="leftSide"><img src="./extraResources/PerfilProf.webp" alt="" /></div>
               <div className="rightSide">
                 <p>I’m Hugo Manzano, a Madrid based Product and Graphic Designer passionate about building visual systems. Whether that means an interactive digital product or print-ready packaging, I am here for it. With a Bachelor’s degree in Graphic Design as well as agency experience, I bridge the gap between strategic brand storytelling and functional user interfaces. <br /><br />
                   <b>What do I do</b><br />
