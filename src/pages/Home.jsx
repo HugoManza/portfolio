@@ -6,6 +6,7 @@ import { projectsData } from '../data/projectsData'
 import ProjectHigh from '../components/ProjectHigh'
 import TopFinal from '../components/TopFinal'
 import HomeMore from '../components/HomeMore'
+import MoreProjects from '../components/MoreProjects'
 const App = () => {
   return (
     <div className="container">
@@ -22,7 +23,7 @@ const App = () => {
       <ProjectHigh />
       <HomeMore />
 
-
+<MoreProjects />
       <Footer />
     </div>
   )

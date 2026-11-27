@@ -1746,7 +1746,7 @@ span {
 .containerProjects {
     color: $Main_White;
     background-color: $backgroundBlack;
-
+    z-index: 2;
 
 
     .textContainer {
@@ -2477,15 +2477,17 @@ blue {
         .ProjectsFrame {
             width: 100%;
             padding: 1rem 1rem;
-            gap: .5rem;
+            gap: 1.5rem;
             background-color: $Main_White;
 
+
             .ProjectClick {
-                min-height: 25vh;
-                max-height: 25vh;
+                min-height: 35vh;
+                max-height: 35vh;
                 flex-direction: column;
                 justify-content: end;
                 background-color: $Main_White;
+                border: 1px solid $Main_White;
 
                 .textContainer {
                     transform: translateY(0);
@@ -2493,23 +2495,26 @@ blue {
                     opacity: 100%;
                     width: 100%;
                     transition: opacity 0 ease-in-out, transform 0s ease-in-out;
+                    background-color: $Main_White;
+                     padding: .75rem 0.25rem;
+                     border-bottom: $Main_Accent 1px solid;
+                    
 
                     h2 {
                         color: $Main_Accent;
                     }
+
                     h5 {
                         color: $Main_Black;
                     }
 
 
-                    background-color: $Main_White;
 
-                    padding: .5rem;
                 }
 
                 .imageContainer {
                     transition: transform .0s ease-in-out;
-               background-color: $Main_White;
+                    background-color: $Main_White;
                 }
 
                 &:hover {

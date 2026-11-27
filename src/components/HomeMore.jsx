@@ -23,14 +23,17 @@ const HomeMore = () => {
                         <div className="expList">
                             <div className="expItem"><div className="titlesExp"><h3>UX / UI Designer</h3><p>Prodigioso Volcán, Madrid</p></div>
                                 <div className="text">
-                                    <li>Transformed wireframe screens into <b>working Figma prototypes</b>  ready to send to the client and production.</li>
-                                    <li>Colaborated closely to adjust to changes needed with a team, while actively working in multiple projects at once and meeting tight deadlines</li></div>
+                                    <li>Translated low-fidelity <b>wireframes</b> into interactive, developer-ready <b>Figma prototypes</b> for client projects, adhering to WCAG accessibility standards and reusable component libraries.</li>
+                                    <li> <b>Built and maintained</b> reusable UI components and accessible interface patterns in Figma,
+                                        streamlining design-to-developer handoff and ensuring visual consistency across deliverables</li></div>
                             </div>
                             <div className="expItem"><div className="titlesExp"><h3>Bachellors Degree in Graphic Design</h3><p>Escuela Superior de Diseño de Madrid</p></div>
                                 <div className="text">
-                                    <li>Finished my education in a prestigious design university in Madrid, where I became proficient with Adobe Suite Programs such as <b>Photoshop, Illustrator, InDesign </b> and <b>After Effects</b>.</li>
-                                    <li>Learnt skills such as <b>Figma prototyping</b>  and Front - end programming languages. (HTML5, SASS, JS, React). I also learnt UX/ UI research strategies and tools.</li>
-                                    <li>                            Designed and produced projects through all the phases, from market research, to coming up with ideas and solutions, final design, production and printing.</li>
+                                    <li><b>Brand Identity</b>, Editorial & Layout Design, Print Production, Motion Graphics (After Effects), 3D
+                      Modeling (Blender), and <b>Digital Design</b> (Figma, HTML5, CSS/SASS, JavaScript).</li>
+                                    <li>Executed <b>end-to-end</b> visual communication projects from market research and concept
+                      ideation through final artworking, pre-press preparation, and production.</li>
+                                   
                                 </div>
                             </div>
                             <div className="expItem hide"><div className="titlesExp"><h3>VI Design Award Anfaco-Fundación Banco Sabadell</h3><p>Finalist</p></div> <div className="text">
