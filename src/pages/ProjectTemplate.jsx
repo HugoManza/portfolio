@@ -117,17 +117,19 @@ const ProjectTemplate = () => {
                         backgroundPosition: 'center'
                     }} >
                         <div className="takeawaysFrame">
-                            <div className="takeawayBox">
-                                <h3>{project.takeaway1}</h3>
-                                <h4>{project.takeawayText1}</h4>
-                            </div>
-                            <div className="takeawayBox">
-                                <h3>{project.takeaway2}</h3>
-                                <h4>{project.takeawayText2}</h4>
-                            </div>
-                            <div className="takeawayBox">
-                                <h3>{project.takeaway3}</h3>
-                                <h4>{project.takeawayText3}</h4>
+                            <div className="centerFrame">
+                                <div className="takeawayBox">
+                                    <h3>{project.takeaway1}</h3>
+                                    <h4>{project.takeawayText1}</h4>
+                                </div>
+                                <div className="takeawayBox">
+                                    <h3>{project.takeaway2}</h3>
+                                    <h4>{project.takeawayText2}</h4>
+                                </div>
+                                <div className="takeawayBox">
+                                    <h3>{project.takeaway3}</h3>
+                                    <h4>{project.takeawayText3}</h4>
+                                </div>
                             </div>
                         </div>
                     </section>

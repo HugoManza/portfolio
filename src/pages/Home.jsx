@@ -3,7 +3,7 @@ import Header from '../components/Header'
 import Footer from '../components/Footer'
 import { Link } from 'react-router-dom'
 import { projectsData } from '../data/projectsData'
-import ProjectSelect from '../components/ProjectSelect'
+import ProjectHigh from '../components/ProjectHigh'
 import TopFinal from '../components/TopFinal'
 import HomeMore from '../components/HomeMore'
 const App = () => {
@@ -17,10 +17,10 @@ const App = () => {
 
 
 
+
+
+      <ProjectHigh />
       <HomeMore />
-
-      <ProjectSelect />
-
 
 
       <Footer />
